@@ -1,5 +1,5 @@
-'use client';
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
 import Header from "../layout/Header";
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
@@ -18,6 +18,7 @@ export const HeroLeftContent = () => {
         <div className=" flex ">
           <Reveal>
             <Image
+              alt="image"
               className="mr-8"
               src={"/bb-logo.png"}
               width={125}
@@ -26,7 +27,12 @@ export const HeroLeftContent = () => {
           </Reveal>
 
           <Reveal>
-            <Image src={"/google-logo.png"} width={125} height={125} />
+            <Image
+              alt="image"
+              src={"/google-logo.png"}
+              width={125}
+              height={125}
+            />
           </Reveal>
         </div>
 
@@ -58,29 +64,32 @@ export const HeroLeftContent = () => {
           </button>
         </Reveal>
 
-      <div className="md:hidden">
-        {showForm && (
-      <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
-        <div className="w-full inset-0 flex justify-center items-center">
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-            style={{
-              width: "80%",
-              height: "80%",
-              border: "none",
-              borderRadius: "3px",
-            }}
-            title="BookingFormWithWebsite"
-          ></iframe>
-        </div>
-      </div>
-      )}
-
-        <div  onClick={toggleForm} className="absolute bottom-0 right-0 w-[30%] -translate-y-16">
-            <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
-                <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+        <div className="md:hidden">
+          {showForm && (
+            <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
+              <div className="w-full inset-0 flex justify-center items-center">
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
+                  style={{
+                    width: "80%",
+                    height: "80%",
+                    border: "none",
+                    borderRadius: "3px",
+                  }}
+                  title="BookingFormWithWebsite"
+                ></iframe>
+              </div>
             </div>
-        </div>
+          )}
+
+          <div
+            onClick={toggleForm}
+            className="absolute bottom-0 right-0 w-[30%] -translate-y-16"
+          >
+            <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
+              <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+            </div>
+          </div>
         </div>
       </main>
     </>
@@ -95,32 +104,38 @@ export const HeroRightContent = () => {
   return (
     <>
       <div className=" h-[88%]">
-        
-        <Image src={"/Group 285.png"} alt="hero-sec" width={1000} height={1000} />
+        <Image
+          alt="image"
+          src={"/Group 285.png"}
+          width={1000}
+          height={1000}
+        />
 
-      {showForm && (
-      <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
-        <div className="w-full inset-0 flex justify-center items-center">
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-            style={{
-              width: "80%",
-              height: "80%",
-              border: "none",
-              borderRadius: "3px",
-            }}
-            title="BookingFormWithWebsite"
-          ></iframe>
-        </div>
-      </div>
-      )}
-
-        <div  onClick={toggleForm} className="absolute bottom-0 right-0 w-[30%] -translate-y-16">
-            <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
-                <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+        {showForm && (
+          <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
+            <div className="w-full inset-0 flex justify-center items-center">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
+                style={{
+                  width: "80%",
+                  height: "80%",
+                  border: "none",
+                  borderRadius: "3px",
+                }}
+                title="BookingFormWithWebsite"
+              ></iframe>
             </div>
+          </div>
+        )}
+
+        <div
+          onClick={toggleForm}
+          className="absolute bottom-0 right-0 w-[30%] -translate-y-16"
+        >
+          <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
+            <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+          </div>
         </div>
-        
       </div>
     </>
   );
@@ -134,28 +149,53 @@ const HeroSection = () => {
           {/* my header component  */}
 
           <Header />
-          
+
           <div className="my-20 lg:my-0 flex flex-row  items-center w-[100%] lg:w-[50%]">
             {/* social icon component  */}
             <div className="w-[8%] flex flex-col gap-1 justify-center -translate-x-10 left-0">
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-2 px-0">
-                <Image src={"/Facebook.png"} alt="facebook" width={8} height={8} />
+                <Image
+                  src={"/Facebook.png"}
+                  alt="facebook"
+                  width={8}
+                  height={8}
+                />
               </div>
 
               <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer  rounded-full flex items-center justify-center py-[10px]">
-                <Image src={"/Subtract.png"} alt="subtract" width={12} height={12} />
+                <Image
+                  src={"/Subtract.png"}
+                  alt="subtract"
+                  width={12}
+                  height={12}
+                />
               </div>
 
               <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-[10px]">
-                <Image src={"/Vector (1).png"} alt="vector" width={12} height={12} />
+                <Image
+                  alt="image"
+                  src={"/Vector (1).png"}
+                  width={12}
+                  height={12}
+                />
               </div>
 
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-[10px]">
-                <Image src={"/Linkedin.png"} alt="linkedin" width={12} height={12} />
+                <Image
+                  src={"/Linkedin.png"}
+                  alt="linkedin"
+                  width={12}
+                  height={12}
+                />
               </div>
 
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-3">
-                <Image src={"/Youtube.png"} alt="youtube" width={12} height={12} />
+                <Image
+                  src={"/Youtube.png"}
+                  alt="youtube"
+                  width={12}
+                  height={12}
+                />
               </div>
             </div>
 

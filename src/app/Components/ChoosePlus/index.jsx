@@ -1,9 +1,9 @@
-"use client";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import { Reveal } from "../../utils/Reveal";
 import Slider from "react-slick";
 import BrandsSlider from "./BrandsSlider";
+
 export const ChooseCardsSlider = () => {
   const MySliderArr = [
     { image: "/Mask group (9).png" },
@@ -26,18 +26,15 @@ export const ChooseCardsSlider = () => {
     <div className="w-full overflow-hidden lg:mt-24 ">
       <Slider {...settings}>
         {MySliderArr.map((item, index) => (
-          <div className="flex justify-between">
-          <div
-            key={index}
-            className="flex items-center justify-center w-[93%] md:w-[80%] h-[10vh] lg:h-[20vh] py-8 px-6 bg-custom-gradient rounded-md"
-          >
-            <Image
-              src={item.image}
-              alt={`Slide ${index + 1}`}
-              width={170}
-              height={170}
-            />
-          </div>
+          <div key={index} className="flex justify-between">
+            <div className="flex items-center justify-center w-[93%] md:w-[80%] h-[10vh] lg:h-[20vh] py-8 px-6 bg-custom-gradient rounded-md">
+              <Image
+                src={item.image}
+                alt={`Slide ${index + 1}`}
+                width={170}
+                height={170}
+              />
+            </div>
           </div>
         ))}
       </Slider>
@@ -48,7 +45,7 @@ export const ChooseCardsSlider = () => {
 function ChoosePlus() {
   return (
     <>
-          <ChooseCardsSlider />
+      <ChooseCardsSlider />
 
       <main className="w-full lg:w-[1200px] mx-auto px-8">
         <div className="lg:flex flex-row justify-between items-center py-20">
@@ -71,7 +68,7 @@ function ChoosePlus() {
         </div>
       </main>
 
-      <BrandsSlider/>
+      <BrandsSlider />
       <hr className="my-16" />
 
       <main className="w-full lg:w-[1200px] mx-auto px-4">
@@ -87,7 +84,7 @@ function ChoosePlus() {
             <Reveal>
               <p>
                 Join us on a journey to create something truly extraordinary.
-                Together, we'll turn your dreams into reality.
+                Together, we&apos;ll turn your dreams into reality.
               </p>
             </Reveal>
           </div>

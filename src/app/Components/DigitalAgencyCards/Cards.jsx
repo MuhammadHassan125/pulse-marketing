@@ -10,7 +10,7 @@ const UpperTextComponent = () => {
           <div className="w-[90%] lg:w-[30%] justify-center items-center">
             <Reveal>
             <h1 className="poppins-medium text-4xl">
-              We're a full-service <br /> digital agency.
+              We are a full-service <br /> digital agency.
             </h1>
             </Reveal>
           </div>
@@ -18,7 +18,7 @@ const UpperTextComponent = () => {
           <div className="w-[90%] pt-6 lg:pt-0 lg:w-[35%] poppins-light font-light">
             <Reveal>
             <p>
-              Elevate your brand's success with Pulse - Your trusted partner for
+              Elevate your brands success with Pulse - Your trusted partner for
               cutting-edge digital solutions and unparalleled customer care in
               the USA.{" "}
             </p>
@@ -41,7 +41,7 @@ const Cards = () => {
             {/* card -one  */}
             <div className="w-[48%] lg:w-[16%] py-12 rounded-2xl relative bg-my-blue-gradient rotate-[-8deg] z-10 hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">
-                <Image src={"/img (1).png"} width={40} height={40} />
+                <Image alt="img-alt" src={"/img (1).png"} width={40} height={40} />
                 <h3 className="poppins-medium sm:text-[2xl] md:text-[3xl]">
                   Web Design <br />
                   Development
@@ -55,7 +55,7 @@ const Cards = () => {
 
             <div className="w-[48%] lg:w-[16%] translate-y-3 py-12 rounded-2xl relative bg-my-green-gradient rotate-[5deg] hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">
-                <Image src={"/img (6).png"} width={40} height={40} />
+                <Image alt="img-alt" src={"/img (6).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[2xl] md:text-[3xl]">
                   Search Engine <br />
                   Optimization
@@ -68,7 +68,7 @@ const Cards = () => {
 
             <div className="w-[48%] lg:w-[16%]  -translate-y-4 py-12 rounded-2xl relative bg-my-purple-gradient rotate-[-6deg] hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">
-                <Image src={"/img (5).png"} width={40} height={40} />
+                <Image alt="img-alt" src={"/img (5).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[2xl] md:text-[3xl]">
                   Photography & <br />
                   Videography
@@ -81,7 +81,7 @@ const Cards = () => {
 
             <div className="w-[48%] lg:w-[16%] translate-y-3 z-10 py-12 rounded-2xl relative bg-my-blue-gradient rotate-[8deg] hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">
-                <Image src={"/img (4).png"} width={40} height={40} />
+                <Image alt="img-alt" src={"/img (4).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[xl] w-[50%] md:w-full">
                   Online Reputation <br />
                   Management
@@ -94,7 +94,7 @@ const Cards = () => {
 
             <div className="w-[48%] lg:w-[16%]  -translate-y-3 py-12 rounded-2xl relative bg-my-green-gradient rotate-[-6deg] hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">
-                <Image src={"/img (3).png"} width={40} height={40} />
+                <Image alt="img-alt" src={"/img (3).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[2xl] md:text-[3xl]">
                   Branding <br />
                   Packages
@@ -107,7 +107,7 @@ const Cards = () => {
 
             <div className="w-[48%] lg:w-[16%] translate-y-4 py-12 rounded-2xl relative bg-my-purple-gradient rotate-[8deg] hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">
-                <Image src={"/img (2).png"} width={40} height={40} />
+                <Image alt="img-alt" src={"/img (2).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[2xl] md:text-[3xl]">
                   Mobile App <br />
                   Development

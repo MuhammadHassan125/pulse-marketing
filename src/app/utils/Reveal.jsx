@@ -1,5 +1,4 @@
-'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 export const Reveal = ({ children, width = "fit-content" }) => {
@@ -7,12 +6,12 @@ export const Reveal = ({ children, width = "fit-content" }) => {
     const mainControls = useAnimation();
     const slideControls = useAnimation();
 
-    useEffect(() => {
-        const onInView = () => {
-            mainControls.start("visible");
-            slideControls.start("visible");
-        };
+    const onInView = useCallback(() => {
+        mainControls.start("visible");
+        slideControls.start("visible");
+    }, [mainControls, slideControls]);
 
+    useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -31,7 +30,7 @@ export const Reveal = ({ children, width = "fit-content" }) => {
                 observer.unobserve(ref.current);
             }
         };
-    }, [mainControls, slideControls]);
+    }, [onInView]);
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>

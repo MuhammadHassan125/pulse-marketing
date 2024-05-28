@@ -10,6 +10,7 @@ const Header = () => {
             {/* logo  */}
             <div>
                 <Image
+                alt="logo"
                 src={"/logo.png"}
                 width={150}
                 height={150}

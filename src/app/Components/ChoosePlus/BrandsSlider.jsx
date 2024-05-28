@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 const BrandsSlider = () => {
   const brandImagesArr = [
     { img: "/01-1.png" },
@@ -40,6 +41,7 @@ const BrandsSlider = () => {
           >
             <Image
               src={item.img}
+              alt="Brand Image"
               width={170}
               height={170}
               placeholder="blur"

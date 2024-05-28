@@ -96,7 +96,7 @@ export const HeroRightContent = () => {
     <>
       <div className=" h-[88%]">
         
-        <Image src={"/Group 285.png"} width={1000} height={1000} />
+        <Image src={"/Group 285.png"} alt="hero-sec" width={1000} height={1000} />
 
       {showForm && (
       <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
@@ -139,23 +139,23 @@ const HeroSection = () => {
             {/* social icon component  */}
             <div className="w-[8%] flex flex-col gap-1 justify-center -translate-x-10 left-0">
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-2 px-0">
-                <Image src={"/Facebook.png"} width={8} height={8} />
+                <Image src={"/Facebook.png"} alt="facebook" width={8} height={8} />
               </div>
 
               <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer  rounded-full flex items-center justify-center py-[10px]">
-                <Image src={"/Subtract.png"} width={12} height={12} />
+                <Image src={"/Subtract.png"} alt="subtract" width={12} height={12} />
               </div>
 
               <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-[10px]">
-                <Image src={"/Vector (1).png"} width={12} height={12} />
+                <Image src={"/Vector (1).png"} alt="vector" width={12} height={12} />
               </div>
 
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-[10px]">
-                <Image src={"/Linkedin.png"} width={12} height={12} />
+                <Image src={"/Linkedin.png"} alt="linkedin" width={12} height={12} />
               </div>
 
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-3">
-                <Image src={"/Youtube.png"} width={12} height={12} />
+                <Image src={"/Youtube.png"} alt="youtube" width={12} height={12} />
               </div>
             </div>
 

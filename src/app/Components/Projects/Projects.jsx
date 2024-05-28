@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
 import React from "react";
-import Tabs from "../MyTabs/Tabs";
 import ContentTab from "./ContentTab";
 import { Reveal } from "../../utils/Reveal";
 
@@ -14,9 +13,9 @@ const Projects = () => {
         {/* project section left box  */}
         <div className="w-[90%] rounded-md p-5 md:p-0 mx-auto md:mx-0 md:w-[40%] flex items-center justify-center bg-[#111217] ">
           {tabImage === false ? (
-                      <Image src={"/mob-app01.png"} width={200} height={200} />
+                      <Image src={"/mob-app01.png"} alt="mob1" width={200} height={200} />
           ) : (
-            <Image src={"/mob-app03.png"} width={200} height={200} />
+            <Image src={"/mob-app03.png"} alt="mob2" width={200} height={200} />
           ) }
         </div>
 
@@ -39,7 +38,7 @@ const Projects = () => {
                   <Reveal>
                   <p className=" poppins-light font-light text-[14px] my-3">
                     Join us on a journey to create something truly
-                    extraordinary. Together, we'll turn your dreams into
+                    extraordinary. Together, we&apos;ll turn your dreams into
                     reality.
                   </p>
                   </Reveal>
@@ -52,9 +51,9 @@ const Projects = () => {
 
           <div className="w-[28%] absolute bottom-0 right-0">
             {tabImage === false ? (
-              <Image src={"/mob-app-mock01.png"} width={300} height={300} />
+              <Image src={"/mob-app-mock01.png"} alt="mob" width={300} height={300} />
             ) : (
-              <Image src={"/mob-app-mock03.png"} width={300} height={300} />
+              <Image src={"/mob-app-mock03.png"} alt="mob4" width={300} height={300} />
             )}
           </div>
         </div>

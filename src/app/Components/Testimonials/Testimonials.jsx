@@ -76,7 +76,7 @@ const Testimonial = () => {
             <div className="text-center">
               {/* <h3 className=''>1</h3> */}
               <div className="flex justify-center">
-                <Image src={"/tetimonial.jpeg.webp"} width={50} height={50} />
+                <Image src={"/tetimonial.jpeg.webp"} alt="asdsad" width={50} height={50} />
               </div>
 
               <h2 className="poppins-medium pt-4 text-[18px]">Stuart Holmes</h2>
@@ -84,7 +84,7 @@ const Testimonial = () => {
                 CEO, Green Collar Brigade
               </span>
               <div className="flex justify-center py-3">
-                <Image src={"/Group 1000002716.png"} width={100} height={100} />
+                <Image src={"/Group 1000002716.png"} alt="asdsad" width={100} height={100} />
               </div>
 
               <div className="text-center poppins-light text-[13px] w-[80%] m-auto">
@@ -100,7 +100,7 @@ const Testimonial = () => {
             {/* testimonial 2 */}
             <div className="text-center">
               <div className="flex justify-center">
-                <Image src={"/tetimonial.jpeg.webp"} width={50} height={50} />
+                <Image src={"/tetimonial.jpeg.webp"} alt="asdsad" width={50} height={50} />
               </div>
 
               <h2 className="poppins-medium pt-4 text-[18px]">
@@ -110,7 +110,7 @@ const Testimonial = () => {
                 Owner, Drear Cleaning Services
               </span>
               <div className="flex justify-center py-3">
-                <Image src={"/Group 1000002716.png"} width={100} height={100} />
+                <Image src={"/Group 1000002716.png"} alt="asdsad" width={100} height={100} />
               </div>
 
               <div className="text-center poppins-light text-[13px] w-[80%] m-auto">
@@ -127,7 +127,7 @@ const Testimonial = () => {
             {/* testimonial 3  */}
             <div className="text-center">
               <div className="flex justify-center">
-                <Image src={"/tetimonial.jpeg.webp"} width={50} height={50} />
+                <Image src={"/tetimonial.jpeg.webp"} alt="asdsad" width={50} height={50} />
               </div>
 
               <h2 className="poppins-medium pt-4 text-[18px]">
@@ -137,7 +137,7 @@ const Testimonial = () => {
                 CEO, Asap security
               </span>
               <div className="flex justify-center py-3">
-                <Image src={"/Group 1000002716.png"} width={100} height={100} />
+                <Image src={"/Group 1000002716.png"} alt="asdsad" width={100} height={100} />
               </div>
 
               <div className="text-center poppins-light text-[13px] w-[80%] m-auto">

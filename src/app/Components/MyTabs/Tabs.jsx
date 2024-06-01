@@ -23,7 +23,7 @@ export default function Tabs() {
     {
       label: "Animated",
       content: (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
           {/* ---------  */}
           <div className="m-auto cursor-n-resize window">
             <Link href="https://studio9p.com/en/" target="_blank">
@@ -777,29 +777,32 @@ export default function Tabs() {
 
   return (
     <>
-      <main className=" w-full lg:w-full m-auto md:px-8 pb-14 ct-tabs">
+      <main className=" w-full lg:w-full m-auto pb-14">
         <div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 md:mb-14 mx-auto px-4 w-full">
-            {tabs.map((tab, index) => (
-              <button
-                key={index}
-                className={`py-2 px-6 w-auto  rounded ${
-                  index === activeTab
-                    ? "bg-my-blue-gradient text-white"
-                    : "border"
-                }`}
-                onClick={() => setActiveTab(index)}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
+        <div className="flex flex-wrap justify-evenly gap-y-3 mb-4 md:mb-14 mx-auto px-4 lg:px-0">
+  {tabs.map((tab, index) => (
+    <button
+      key={index}
+      className={`py-4 px-10 w-[100%] md:w-[46%] lg:w-[30%] rounded ${
+        index === activeTab
+          ? "bg-my-blue-gradient text-white"
+          : "border"
+      }`}
+      onClick={() => setActiveTab(index)}
+    >
+      {tab.label}
+    </button>
+  ))}
+</div>
+
 
           <div ref={tabContentRef} className="px-6 md:px-2 py-2">
             {tabs[activeTab].content}
           </div>
         </div>
       </main>
+
+      
       <style jsx>{`
         .image-hover {
           transition: transform 0.3s ease;

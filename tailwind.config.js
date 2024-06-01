@@ -10,6 +10,9 @@ module.exports = {
       boxShadow: {
         'glow': '0 0 5px rgba(0, 255, 255, 0.7)',
       },
+      filter: {
+        invert: 'invert(1)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

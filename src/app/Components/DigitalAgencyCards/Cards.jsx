@@ -5,12 +5,11 @@ import React from "react";
 const UpperTextComponent = () => {
   return (
     <>
-      <main>
-        <div className="w-full px-6 lg:px-0 lg:flex flex-row justify-between items-center py-20">
+      {/* <main>
+        <div className="w-full px-6 lg:px-0 lg:flex flex-row justify-between items-center py-20 md:pt-0">
           <div className="w-[90%] lg:w-[30%] justify-center items-center">
             <Reveal>
             <h1 className="poppins-medium text-4xl">
-              We are a full-service <br /> digital agency.
             </h1>
             </Reveal>
           </div>
@@ -25,6 +24,27 @@ const UpperTextComponent = () => {
             </Reveal>
           </div>
         </div>
+      </main> */}
+
+<main>
+          <div className="md:flex flex-row justify-between items-center pb-10 md:pb-12">
+          <div className=" w-[80%] md:w-[50%]">
+            <Reveal>
+              <h1 className="poppins-medium text-5xl ct-heading">
+              We are a full-service <br /> digital agency.
+              </h1>
+            </Reveal>
+          </div>
+          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light text-justify font-light">
+            <Reveal>
+              <p>
+              Elevate your brands success with Pulse - Your trusted partner for
+              cutting-edge digital solutions and unparalleled customer care in
+              the USA.{" "}
+              </p>
+            </Reveal>
+          </div>
+        </div>
       </main>
     </>
   );
@@ -33,8 +53,8 @@ const UpperTextComponent = () => {
 const Cards = () => {
   return (
     <>
-      <main className="w-full lg:w-[1200px] m-auto py-16">
-        <div className="w-full  m-auto">
+      <main className="w-full lg:w-full m-auto pt-16 card-section">
+        <div className="w-full  m-auto px-10">
           <UpperTextComponent />
 
           <div className="w-full flex flex-wrap justify-between items-center px-8 lg:px-0">

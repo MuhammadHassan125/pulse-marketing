@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-      <main className="w-full py-10">
+      <main className="w-full py-10 footer-top">
         <div className="w-full px-8 lg:px-0 lg:w-[1200px] mx-auto md:flex justify-between items-center">
           <div>
             <Image src={"/logo.png"} width={150} height={150} alt="Logo" />
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full py-4 lg:py-12 overflow-hidden">
+        <div className="w-full py-4 lg:py-2 overflow-hidden">
           <Slider {...settings}>
             <div className="w-full">
               <h1 className="poppins-medium text-[120px] w-full text-center whitespace-nowrap overflow-hidden text-transparent border-text">

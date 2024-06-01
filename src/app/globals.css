@@ -152,3 +152,325 @@ body {
   background: linear-gradient(208.08deg, #50A2D4 10.76%, #20658F 65.05%); 
   cursor:grab
 }
+
+.filter-invert {
+  filter: invert(1);
+}
+
+
+/* image ebhaviour CSS FOR TABS */
+.window {
+  width: 360px;
+  margin: auto;
+  border-radius: 5px;
+  cursor: n-resize;
+}
+
+.header {
+  padding: 0px 150px !important;
+}
+.hre-section {
+  padding-left: 90px !important;
+}
+.social-logos {
+  padding-left: 30px;
+  gap: 12px;
+}
+
+.social-logos .rounded-full {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.social-logos img {
+  --size: 16px;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+}
+.contact-btn {
+  padding: 13px 18px;
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.contact-btn .rounded-full {
+  background: var(--gradient, linear-gradient(to top, #50a2d4, #6ee3d7)) !important;
+  color: #fff !important;
+  padding: 5px !important;
+  margin-left: 18px !important;
+}
+.get-btn {
+  bottom: -63px !important;
+  padding: 0 !important;
+  max-width: 400px !important;
+}
+
+.get-btn .bg-\[\#50A2D4\].px-6.rounded-tl-\[40px\].py-3 {
+  padding: 30px 48px !important;
+  border-radius: 60px 0px 0px 0px !important;
+}
+
+.get-btn .bg-\[\#50A2D4\].px-6.rounded-tl-\[40px\].py-3 h3 {
+  font-size: 25px !important;
+  text-transform: capitalize !important;
+}
+.ct-heading {
+  line-height: 1.3em;
+}
+
+.ct-tabs .window {
+  width: 100% !important;
+}
+
+.ct-tabs .jsx-c24f23d73b4daffa.grid.grid-cols-2.sm\:grid-cols-3.lg\:grid-cols-4.gap-4.mb-4.md\:mb-14.mx-auto.px-4.w-full {
+  margin-bottom: 35px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+.ct-tabs .jsx-c24f23d73b4daffa.grid.grid-cols-2.sm\:grid-cols-3.lg\:grid-cols-4.gap-4.mb-4.md\:mb-14.mx-auto.px-4.w-full button {
+  flex: 0 0 24% !important;
+  padding: 18px 0 !important;
+}
+.ct-padding {
+  padding-top: 50px !important;
+}
+.card-section {
+  padding: 90px 0 !important;
+}
+.card-section h1 {
+  font-size: 54px !important;
+  line-height: 1.2em !important;
+  min-width: 400px !important;
+  --width: 700px;
+  max-width: var(--width);
+  width: var(--width);
+}
+
+.testimonial .slick-arrow {
+  width: 60px !important;
+  height: 60px !important;
+  background: var(--gradient, linear-gradient(to top, #50a2d4, #6ee3d7)) !important;
+  border-radius: 50% !important;
+}
+
+.testimonial .slick-arrow::before {
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 33px;
+  position: relative;
+  top: 3px;
+}
+
+.testimonial h2 {
+  font-size: 30px !important;
+}
+
+.testimonial .text-\[\#50A2D4\].poppins-light.text-\[13px\] {
+  font-size: 15px !important;
+}
+
+.testimonial p {
+  font-size: 20px !important;
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 640px) {
+  .window {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 900px) {
+  .window{
+    width: 400px;
+  }
+}
+
+.window .image {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 375px;
+  transition: 8s all ease;
+}
+
+.window .image:hover {
+  object-position: bottom;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 20px !important;
+}
+
+.header .bg-\[\#50A2D4\].my-3.md\:my-0.text-white.hover\:transition-all.hover\:duration-600.hover\:ease-in-out.hover\:bg-white.hover\:text-\[\#62c9d6\].flex.justify-center.items-center.px-5.py-2.cursor-pointer.rounded-3xl {
+    max-width: 250px;
+}
+
+.hre-section {
+    padding: 0 20px !important;
+}
+.social-logos {
+  display: none;
+}
+.hre-section h1 {
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hre-section p {
+  font-size: 14px;
+}
+
+.ct-padding {
+  padding-top: 0px !important;
+  margin-top: -50px;
+}
+
+.ct-padding h1 {
+  font-size: 25px;
+}
+
+.ct-padding p {
+  font-size: 14px;
+}
+
+.contact-btn {
+  padding: 7px 20px;
+}
+
+.ct-heading {
+  font-size: 25px;
+}
+
+.my-16 {
+  margin: 40px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.ct-tabs .jsx-c24f23d73b4daffa.grid.grid-cols-2.sm\:grid-cols-3.lg\:grid-cols-4.gap-4.mb-4.md\:mb-14.mx-auto.px-4.w-full button {
+  flex: 0 0 46% !important;
+  padding: 8px 0px !important;
+  font-size: 14px;
+}
+
+.card-section {
+  padding: 60px 0 !important;
+}
+
+.card-section .w-full.px-6.lg\:px-0.lg\:flex.flex-row.justify-between.items-center.py-20.md\:pt-0 {
+  padding: 0 0 !important;
+}
+
+.card-section h1 {
+  font-size: 20px !important;
+}
+
+.card-section .w-full.flex.flex-wrap.justify-between.items-center.px-8.lg\:px-0 {
+  padding: 40px 0 0 0;
+}
+
+.testimonial {
+  padding: 0 0 60px 0;
+}
+
+.testimonial h1 {
+  font-size: 25px;
+}
+
+.testimonial p {
+  font-size: 14px !important;
+  margin-top: 0;
+}
+
+.testimonial .w-\[90\%\].lg\:w-\[35\%\].poppins-light.font-light.pt-8.md\:pt-0 {
+  padding: 0;
+}
+
+.testimonial h2 {
+  font-size: 20px !important;
+}
+
+.testimonial .text-\[\#50A2D4\].poppins-light.text-\[13px\] {
+  font-size: 11px !important;
+}
+
+.testimonial p {
+  font-size: 12px !important;
+}
+
+.testimonial .slick-arrow {
+  --size: 30px !important;
+  width: var(--size) !important;
+  height: var(--size) !important;
+}
+
+.testimonial .slick-arrow:before {
+  font-size: 14px;
+  top: 1px;
+}
+
+.ct-projects h1 {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.ct-projects p {
+  font-size: 14px !important;
+  line-height: 1.2em;
+}
+
+.ct-projects .MuiTabPanel-root.css-13xfq8m-MuiTabPanel-root {
+  padding: 0 0;
+}
+
+.ct-projects button {
+  padding: 0 0 !important;
+}
+
+.ct-projects h1 {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.ct-projects p {
+  font-size: 14px !important;
+  line-height: 1.2em;
+}
+
+.ct-projects .MuiTabPanel-root.css-13xfq8m-MuiTabPanel-root {
+  padding: 0 0;
+}
+
+.ct-projects button {
+  padding: 0 0 !important;
+}
+
+.get-mv-btbn h3 {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.get-mv-btbn {
+  padding: 14px 10px !important;
+  bottom: 18px;
+  position: relative;
+}
+.footer-top {
+  margin-top: -210px;
+}
+
+
+}

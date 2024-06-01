@@ -19,7 +19,7 @@ const Calender = () => {
 
   return (
     <>
-      <main className="w-full lg:w-[1200px] m-auto py-16">
+      <main className="w-full lg:w-full m-auto py-16 md:px-10">
         <div className="lg:flex justify-between items-center">
           {/* left side content  */}
           <div className="w-[100%] px-8 lg:px-0 lg:w-[50%] mb-14 lg:mb-0">

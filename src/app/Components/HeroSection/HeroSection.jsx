@@ -4,7 +4,7 @@ import Header from "../layout/Header";
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 import { Reveal } from "../../utils/Reveal";
-
+import Link from "next/link";
 export const HeroLeftContent = () => {
   const [showForm, setShowForm] = useState(false);
 
@@ -13,10 +13,11 @@ export const HeroLeftContent = () => {
   };
   return (
     <>
-      <main className="w-full mt-16 px-5">
+      <main className="w-full mt-16 lg:mt-0 px-5 hre-section">
         {/* upper logos container*/}
         <div className=" flex ">
           <Reveal>
+            <Link href={'https://www.bbb.org/ca/bc/vancouver/profile/digital-marketing/pulse-marketing-inc-0037-2428735/#sealclick'} target="_blank">
             <Image
               alt="image"
               className="mr-8"
@@ -24,23 +25,26 @@ export const HeroLeftContent = () => {
               width={125}
               height={125}
             />
+            </Link>
           </Reveal>
 
           <Reveal>
-            <Image
-              alt="image"
-              src={"/google-logo.png"}
-              width={125}
-              height={125}
-            />
+            <Link href={'https://www.google.com/search?sca_esv=09379ecd0b6efd91&sca_upv=1&q=Pulse+Marketing+Inc.&ludocid=8690602816288484550&lsig=AB86z5VS1uhD8C0TEf_4MQU5HsGp&kgs=dd8e1417abb4f44a&shndl=30&shem=lnole,lsde,lsp&source=sh/x/loc/act/m1/1'} target="_blank">
+              <Image
+                alt="image"
+                src={"/google-logo.png"}
+                width={125}
+                height={125}
+              />
+            </Link>
           </Reveal>
         </div>
 
         {/* Content Heading  */}
         <div>
           <Reveal>
-            <h1 className="text-[40px] md:text-[55px]  mt-8 poppins-medium leading-[49px] md:leading-[70px]">
-              Crafting Digital Excellence Web <br /> App Branding
+            <h1 className="text-[1.5em] md:text-[60px] lg:text-[60px]  mt-8 poppins-medium leading-[49px] md:leading-[1.3em]">
+              Crafting Digital<br /> Excellence Web <br /> App Branding
             </h1>
           </Reveal>
 
@@ -56,7 +60,7 @@ export const HeroLeftContent = () => {
 
         {/* Contact Us button  */}
         <Reveal>
-          <button className="bg-white hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl flex justify-between items-center border-none outline-none">
+          <button className="bg-white hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl flex justify-between items-center border-none outline-none contact-btn">
             Contact Us
             <div className="bg-[#6EE3D7] p-[2px] ml-2 h-full rounded-full">
               <MdArrowForward />
@@ -86,7 +90,7 @@ export const HeroLeftContent = () => {
             onClick={toggleForm}
             className="absolute bottom-0 right-0 w-[30%] -translate-y-16"
           >
-            <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
+            <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3 flex items-center justify-end get-mv-btbn">
               <h3 className="poppins-light text-white text-lg">Get in touch</h3>
             </div>
           </div>
@@ -130,7 +134,7 @@ export const HeroRightContent = () => {
 
         <div
           onClick={toggleForm}
-          className="absolute bottom-0 right-0 w-[30%] -translate-y-16"
+          className="absolute bottom-0 right-0 w-[30%] -translate-y-16 get-btn"
         >
           <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
             <h3 className="poppins-light text-white text-lg">Get in touch</h3>
@@ -144,7 +148,7 @@ export const HeroRightContent = () => {
 const HeroSection = () => {
   return (
     <>
-      <main className="w-full lg:w-[1200px] m-auto relative">
+      <main className="w-full lg:w-full m-auto relative">
         <div className="flex flex-row relative w-[100%] justify-between ">
           {/* my header component  */}
 
@@ -152,8 +156,9 @@ const HeroSection = () => {
 
           <div className="my-20 lg:my-0 flex flex-row  items-center w-[100%] lg:w-[50%]">
             {/* social icon component  */}
-            <div className="w-[8%] flex flex-col gap-1 justify-center -translate-x-10 left-0">
-              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-2 px-0">
+            <div className="w-[8%] flex flex-col gap-1 justify-center translate-x-0. social-logos">
+              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out
+               hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0">
                 <Image
                   src={"/Facebook.png"}
                   alt="facebook"
@@ -162,7 +167,8 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer  rounded-full flex items-center justify-center py-[10px]">
+              <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer 
+               rounded-full flex items-center justify-center py-3">
                 <Image
                   src={"/Subtract.png"}
                   alt="subtract"
@@ -171,7 +177,8 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-[10px]">
+              <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
+              rounded-full flex items-center justify-center py-3">
                 <Image
                   alt="image"
                   src={"/Vector (1).png"}
@@ -180,7 +187,8 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-[10px]">
+              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer 
+              rounded-full flex items-center justify-center py-3">
                 <Image
                   src={"/Linkedin.png"}
                   alt="linkedin"
@@ -189,7 +197,8 @@ const HeroSection = () => {
                 />
               </div>
 
-              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer rounded-full flex items-center justify-center py-3">
+              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer
+               rounded-full flex items-center justify-center py-[14px]">
                 <Image
                   src={"/Youtube.png"}
                   alt="youtube"

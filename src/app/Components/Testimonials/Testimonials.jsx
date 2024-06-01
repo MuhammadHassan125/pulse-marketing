@@ -8,19 +8,20 @@ const UpperTextTestimonials = () => {
   return (
     <>
       <main>
-        <div className="w-full block lg:flex flex-row justify-between items-center md:py-20 pb-10 px-8 lg:px-0">
-          <div className="w-[90%] lg:w-[30%] justify-center items-center">
+          <div className="md:flex flex-row justify-between items-center pb-10 md:pb-12">
+          <div className=" w-[80%] md:w-[50%]">
             <Reveal>
-            <h1 className="poppins-medium text-4xl">Our Happy Clients</h1>
+              <h1 className="poppins-medium text-5xl ct-heading">
+              Our Happy Clients
+              </h1>
             </Reveal>
           </div>
-
-          <div className="w-[90%] lg:w-[35%] poppins-light font-light pt-8 md:pt-0">
+          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light text-justify font-light">
             <Reveal>
-            <p>
+              <p>
               Our clients are our biggest advocates. See what they have to say
               about working with us.
-            </p>
+              </p>
             </Reveal>
           </div>
         </div>
@@ -68,7 +69,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <main className="w-full lg:w-[1200px] m-auto py-20">
+      <main className="w-full lg:w-full m-auto py-20 md:pt-0 md:px-10 testimonial">
         <UpperTextTestimonials />
         <div className="slider-container w-[80%] py-20 m-auto bg-[#050023] shadow-lg border-[#110351]  rounded-3xl ">
           <Slider {...settings}>

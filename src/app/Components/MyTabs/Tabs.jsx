@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
-import { useState, useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,285 +11,790 @@ export default function Tabs() {
 
   useEffect(() => {
     if (tabContentRef.current) {
-      gsap.fromTo(tabContentRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
+      gsap.fromTo(
+        tabContentRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1 }
+      );
     }
   }, [activeTab]);
 
   const tabs = [
     {
-      label: 'Animated',
+      label: "Animated",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* ---------  */}
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://studio9p.com/en/" target="_blank">
+              <Image
+                src="/animated01.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          {/* ---------  */}
+
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.clouarchitects.com/" target="_blank">
+              <Image
+                src="/animated02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.bienvillecapital.com/" target="_blank">
+              <Image
+                src="/animated03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://petertarka.com/" target="_blank">
+              <Image
+                src="/animated04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+
+          <div className="m-auto cursor-n-resize window"> 
+            <Link href="https://www.oneupstudio.it/" target="_blank">
+              <Image
+                src="/animated05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.steelwavellc.com/" target="_blank">
+              <Image
+                src="/animated06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+        </div>
         </div>
       ),
     },
     {
-      label: 'Hospitality',
+      label: "Hospitality",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://pierreslounge.ca/" target="_blank">
+              <Image
+                src="/hospa-01.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://westoakrestaurant.com/" target="_blank">
+              <Image
+                src="/hos-02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://twelvewest.ca/" target="_blank">
+              <Image
+                src="/hos-03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://karmalounge.ca/" target="_blank">
+              <Image
+                src="/hos-04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://inciteinteractive.com/" target="_blank">
+              <Image
+                src="/hos-05.png"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://saaqitechdeveloper.com/huka102/" target="_blank">
+              <Image
+                src="/hospi-o6.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'Contractors',
+      label: "Contractors",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+           <div className="m-auto cursor-n-resize window">
+            <Link href="https://skylinesolutions.ca/" target="_blank">
+              <Image
+                src="/cont-01.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://glassfixcanada.com/" target="_blank">
+              <Image
+                src="/cont-02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.bayut.com/" target="_blank">
+              <Image
+                src="/cont-03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://famproperties.com/" target="_blank">
+              <Image
+                src="/cont-04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://senseilms.com/" target="_blank">
+              <Image
+                src="/cont-05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div> 
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.out-class.org/?gclid=EAIaIQobChMIztjxtvOF_QIVks53Ch0_hAMgEAAYASAAEgJxAfD_BwE" target="_blank">
+              <Image
+                src="/cont-06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'E-Commerce',
+      label: "E-Commerce",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+           <div className="m-auto cursor-n-resize window">
+            <Link href="https://leadapparel.com/" target="_blank">
+              <Image
+                src="/e-commerce-01.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>   
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://oohlaluxe.com/" target="_blank">
+              <Image
+                src="/e-commerce-02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://fitoru.com/" target="_blank">
+              <Image
+                src="/e-commerce-03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.innogear.com/" target="_blank">
+              <Image
+                src="/e-commerce-04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.dreamlandjewelry.com/" target="_blank">
+              <Image
+                src="/e-commerce-05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>   <div className="m-auto cursor-n-resize window">
+            <Link href="https://bymilaner.com/" target="_blank">
+              <Image
+                src="/e-commerce-06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'Services',
+      label: "Services",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+           <div className="m-auto cursor-n-resize window">
+            <Link href="https://absolutedental.com.au/" target="_blank">
+              <Image
+                src="/service-01.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://aphroditehairstudio.ca/" target="_blank">
+              <Image
+                src="/service-02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://bettertax.org/" target="_blank">
+              <Image
+                src="/service-03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://cactuslandscaping.ca/" target="_blank">
+              <Image
+                src="/service-04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://dulexpropainting.ca/" target="_blank">
+              <Image
+                src="/service-05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>   <div className="m-auto cursor-n-resize window">
+            <Link href="https://fuzelogistics.com/en/" target="_blank">
+              <Image
+                src="/service-06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'Landing Pages',
+      label: "Landing Pages",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+             <div className="m-auto cursor-n-resize window">
+            <Link href="https://collectivegen.com/" target="_blank">
+              <Image
+                src="/landingpage-01.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://corporette.com/" target="_blank">
+              <Image
+                src="/landingpage-02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://kayandtee.ca/" target="_blank">
+              <Image
+                src="/landingpage-03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://saaqitechdeveloper.com/brennannevadainc-final/" target="_blank">
+              <Image
+                src="/landing-04.png"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://saaqitechdeveloper.com/cowboyjerky/" target="_blank">
+              <Image
+                src="/landingpage-05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://theposhpicnicatx.com/" target="_blank">
+              <Image
+                src="/landingpage-06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'Real Estate',
+      label: "Real Estate",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="m-auto cursor-n-resize window">
+        <Link href="https://bscottrealtydmv.com/" target="_blank">
+          <Image
+            src="/real-01.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>
+      <div className="m-auto cursor-n-resize window">
+            <Link href="https://idealagent.com/" target="_blank">
+              <Image
+                src="/real-02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.knightfrank.ae/" target="_blank">
+              <Image
+                src="/real-03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://saaqitechdeveloper.com/arcatec-101/" target="_blank">
+              <Image
+                src="/real-04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.hiltonhyland.com/" target="_blank">
+              <Image
+                src="/real-05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://saaqitechdeveloper.com/hellix1020/" target="_blank">
+              <Image
+                src="/real-06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'Dispensaries',
+      label: "Dispensaries",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="m-auto cursor-n-resize window">
+        <Link href="https://www.6pak.ca/" target="_blank">
+          <Image
+            src="/disp01.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>
+      <div className="m-auto cursor-n-resize window">
+        <Link href="https://www.atgpharma.com/" target="_blank">
+          <Image
+            src="/disp02.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>
+      <div className="m-auto cursor-n-resize window">
+        <Link href="https://ignite.co/" target="_blank">
+          <Image
+            src="/disp03.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>
+      <div className="m-auto cursor-n-resize window">
+        <Link href="https://cannapiece.ca/" target="_blank">
+          <Image
+            src="/disp04.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>   
+      <div className="m-auto cursor-n-resize window">
+        <Link href="https://ccg-corp.ca/" target="_blank">
+          <Image
+            src="/disp05.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>
+      <div className="m-auto cursor-n-resize window">
+        <Link href="https://gvwellness.ca/" target="_blank">
+          <Image
+            src="/disp06.webp"
+            alt="Image 1"
+            className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+            width={180}
+            height={400}
+          />
+        </Link>
+      </div>
         </div>
       ),
     },
     {
-      label: 'TurnKey Sites',
+      label: "TurnKey Sites",
       content: (
-        <div className="grid grid-cols-3 gap-4">
-          <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
-          </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
-          </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+             <div className="m-auto cursor-n-resize window">
+            <Link href="https://ww.bearplex.com/" target="_blank">
+              <Image
+                src="/turnkey-site-1.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://evolvere.co/" target="_blank">
+              <Image
+                src="/turnkey-site02.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://meotech.io/" target="_blank">
+              <Image
+                src="/turnkey-site03.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://setosaskin.pk/" target="_blank">
+              <Image
+                src="/turnkey-site04.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>   <div className="m-auto cursor-n-resize window">
+            <Link href="https://gvwellness.ca/" target="_blank">
+              <Image
+                src="/turnkey-site05.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
+          <div className="m-auto cursor-n-resize window">
+            <Link href="https://www.skipp.dev/home" target="_blank">
+              <Image
+                src="/turnkey-site06.webp"
+                alt="Image 1"
+                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={180}
+                height={400}
+              />
+            </Link>
+          </div>
         </div>
       ),
     },
     {
-      label: 'Apps',
+      label: "Apps",
       content: (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <Link href="https://studio9p.com/en/" target="_blank">
-              <Image src="/web-1.JPG" alt="Image 1" className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
+            <Image
+              src="/ap-01.webp"
+              alt="Image 1"
+              className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300"
+              width={180}
+              height={400}
+            />
           </Link>
           <Link href="https://www.clouarchitects.com/" target="_blank">
-              <Image src="/web-2.JPG" alt="Image 2" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 " width={180} height={400} />
+            <Image
+              src="/ap-02.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
           </Link>
-          <Link href="https://www.bienvillecapital.com/" target="_blank">
-              <Image src="/web-3.JPG" alt="Image 3" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
+          <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Image
+              src="/ap-03.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
           </Link>
-          <Link href="https://petertarka.com/" target="_blank">
-              <Image src="/web-4.JPG" alt="Image 4" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
+          <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Image
+              src="/ap-04.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
           </Link>
-          <Link href="https://www.oneupstudio.it/" target="_blank">
-              <Image src="/web-5.JPG" alt="Image 5" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
+          <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Image
+              src="/ap-05.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
           </Link>
-          <Link href="https://www.steelwavellc.com/" target="_blank">
-              <Image src="/web-6.JPG" alt="Image 6" className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300" width={180} height={400} />
+          <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Image
+              src="/ap-06.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
           </Link>
+
+          <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Image
+              src="/ap-07.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
+          </Link>
+          
+          <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Image
+              src="/ap-08.webp"
+              alt="Image 2"
+              className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
+              width={180}
+              height={400}
+            />
+          </Link>
+
         </div>
       ),
     },
+  
   ];
 
   useEffect(() => {
-    const images = tabContentRef.current.querySelectorAll('img');
-    gsap.fromTo(images, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1, stagger: 0.3 });
+    const images = tabContentRef.current.querySelectorAll("img");
+    gsap.fromTo(
+      images,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, stagger: 0.3 }
+    );
   }, [activeTab]);
 
   return (
     <>
-      <main className=" w-full lg:w-[1200px] m-auto pb-14">
+      <main className=" w-full lg:w-full m-auto md:px-8 pb-14 ct-tabs">
         <div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 mx-auto px-4 w-full">
-          {/* <div className="block md:flex flex-wrap items-start gap-4 space-x-10 mb-4 w-full md:max-w-[90%]"> */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 md:mb-14 mx-auto px-4 w-full">
             {tabs.map((tab, index) => (
               <button
                 key={index}
-                className={`py-2 px-6 w-auto  rounded ${index === activeTab ? 'bg-my-blue-gradient text-white' : 'border'}`}
+                className={`py-2 px-6 w-auto  rounded ${
+                  index === activeTab
+                    ? "bg-my-blue-gradient text-white"
+                    : "border"
+                }`}
                 onClick={() => setActiveTab(index)}
               >
                 {tab.label}
               </button>
             ))}
           </div>
-          
+
           <div ref={tabContentRef} className="px-6 md:px-2 py-2">
             {tabs[activeTab].content}
           </div>

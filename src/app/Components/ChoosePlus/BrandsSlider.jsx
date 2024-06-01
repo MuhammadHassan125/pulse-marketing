@@ -26,9 +26,9 @@ const BrandsSlider = () => {
     { img: "/15.png" },
     { img: "/16.webp" },
     { img: "/17.png" },
-    { img: "/18.png" },
-    { img: "/19.png" },
-    { img: "/20.webp" },
+    // { img: "/18.png" },
+    // { img: "/19.png" },
+    // { img: "/20.webp" },
   ];
 
   var settings = {
@@ -61,7 +61,7 @@ const BrandsSlider = () => {
           </div>
         ))}
       </div> */}
-    <div className="w-full overflow-hidden lg:mt-24 ">
+    <div className="w-full overflow-hidden">
   <Slider {...settings}>
   {/* <div className="flex flex-row flex-wrap items-center w-[80%] ">
       {brandImagesArr.map((item, index) => (
@@ -105,7 +105,7 @@ const BrandsSlider = () => {
 
 
     <div className="flex flex-row flex-wrap items-center justify-center w-[80%] ">
-      {brandImagesArr.map((item, index) => (
+      {SecondSliderArr.map((item, index) => (
         <div
           key={index}
           className="bg-[#f5f5f5] transition-all duration-500 hover:rounded-none ease-in-out

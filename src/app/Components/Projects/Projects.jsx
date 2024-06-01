@@ -21,9 +21,6 @@ const Projects = () => {
           {tabImage === 2 && (
             <Image src={"/mob-app02.png"} alt="mob3" width={200} height={200} />
           )}
-          {tabImage === 3 && (
-            <Image src={"/mob-app02.png"} alt="mob3" width={200} height={200} />
-          )}
         </div>
 
         {/* project section right box */}
@@ -64,9 +61,6 @@ const Projects = () => {
               <Image src={"/mob-app-mock03.png"} alt="mob4" width={300} height={300} />
             )}
             {tabImage === 2 && (
-              <Image src={"/mob-app-mock02.png"} alt="mob5" width={300} height={300} />
-            )}
-            {tabImage === 3 && (
               <Image src={"/mob-app-mock02.png"} alt="mob5" width={300} height={300} />
             )}
 

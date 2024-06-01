@@ -779,11 +779,11 @@ export default function Tabs() {
     <>
       <main className=" w-full lg:w-full m-auto pb-14">
         <div>
-        <div className="flex flex-wrap justify-evenly gap-y-3 mb-4 md:mb-14 mx-auto px-4 lg:px-0">
+        <div className="flex flex-wrap justify-center gap-8 mb-4 md:mb-14 mx-auto px-4 lg:px-0">
   {tabs.map((tab, index) => (
     <button
       key={index}
-      className={`py-4 px-10 w-[100%] md:w-[46%] lg:w-[30%] rounded ${
+      className={`py-4 px-10 rounded w-full md:w-auto ${
         index === activeTab
           ? "bg-my-blue-gradient text-white"
           : "border"

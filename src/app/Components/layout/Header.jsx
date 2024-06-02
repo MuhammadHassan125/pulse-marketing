@@ -6,10 +6,10 @@ import { IoIosMail } from "react-icons/io";
 const Header = () => {
   return (
     <>
-        <main className='w-full lg:w-[100%] lg:mx-auto md:px-8 lg:px-4 sm:flex my-4 md:my-0 justify-between h-24 items-center absolute header'>
+        <main className='w-full lg:w-[100%] lg:mx-auto md:px-8 lg:px-4 flex my-4 md:my-0 justify-between h-24 items-center absolute header'>
 
             {/* logo  */}
-            <div>
+            <div className='w-100'>
               <Link href={'/'}>
                 <Image
                 alt="logo"
@@ -25,7 +25,7 @@ const Header = () => {
                 <IoIosMail 
                 className='text-xl mr-1'
                 />
-                <p className='poppins-regular'><Link href="mailto:hi@pulsemarketing.io">hi@pulsemarketing.io</Link></p>
+                <p className='poppins-regular text-[13px] md:text-[15px]'><Link href="mailto:hi@pulsemarketing.io">hi@pulsemarketing.io</Link></p>
             </div>
 
         </main>

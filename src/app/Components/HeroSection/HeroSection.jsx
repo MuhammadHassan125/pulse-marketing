@@ -60,7 +60,7 @@ export const HeroLeftContent = () => {
 
         {/* Contact Us button  */}
         <Reveal>
-          <button className="bg-white hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl flex justify-between items-center border-none outline-none contact-btn">
+          <button className="bg-white hidden hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl md:flex justify-between items-center border-none outline-none contact-btn">
             Contact Us
             <div className="bg-[#6EE3D7] p-[2px] ml-2 h-full rounded-full">
               <MdArrowForward />
@@ -75,7 +75,7 @@ export const HeroLeftContent = () => {
                 <iframe
                   src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
                   style={{
-                    width: "80%",
+                    width: "100%",
                     height: "80%",
                     border: "none",
                     borderRadius: "3px",
@@ -88,7 +88,7 @@ export const HeroLeftContent = () => {
 
           <div
             onClick={toggleForm}
-            className="absolute bottom-0 right-0 w-[30%] -translate-y-16"
+            className="absolute bottom-0 right-0 w-[40%] md:w-[30%]-translate-y-16"
           >
             <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3 flex items-center justify-end get-mv-btbn">
               <h3 className="poppins-light text-white text-lg">Get in touch</h3>
@@ -157,8 +157,9 @@ const HeroSection = () => {
           <div className="my-20 lg:my-0 flex flex-row  items-center w-[100%] lg:w-[50%]">
             {/* social icon component  */}
             <div className="w-[8%] flex flex-col gap-1 justify-center translate-x-0. social-logos">
+              <Link href={'https://www.facebook.com/pulsemarketing.io/'} target="_blank">
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out
-               hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0">
+               hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0">         
                 <Image
                   src={"/Facebook.png"}
                   alt="facebook"
@@ -166,7 +167,9 @@ const HeroSection = () => {
                   height={8}
                 />
               </div>
+              </Link>
 
+              <Link href={'https://www.instagram.com/pulsemarketing.io/'} target="_blank">
               <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer 
                rounded-full flex items-center justify-center py-3">
                 <Image
@@ -176,17 +179,9 @@ const HeroSection = () => {
                   height={12}
                 />
               </div>
+              </Link>
 
-              <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
-              rounded-full flex items-center justify-center py-3">
-                <Image
-                  alt="image"
-                  src={"/Vector (1).png"}
-                  width={12}
-                  height={12}
-                />
-              </div>
-
+            <Link href={'https://www.linkedin.com/company/pulse-marketing-inc/'} target="_blank">
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer 
               rounded-full flex items-center justify-center py-3">
                 <Image
@@ -196,7 +191,9 @@ const HeroSection = () => {
                   height={12}
                 />
               </div>
+              </Link>
 
+              <Link href={'https://www.youtube.com/@ianslater3586' } target="_blank">
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer
                rounded-full flex items-center justify-center py-[14px]">
                 <Image
@@ -206,6 +203,7 @@ const HeroSection = () => {
                   height={12}
                 />
               </div>
+              </Link>
             </div>
 
             <div>

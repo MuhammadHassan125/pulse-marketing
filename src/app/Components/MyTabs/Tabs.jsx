@@ -783,7 +783,7 @@ export default function Tabs() {
   {tabs.map((tab, index) => (
     <button
       key={index}
-      className={`py-4 px-10 rounded w-full md:w-auto ${
+      className={`py-4 px-4 md:px-10 rounded w-[45%] md:w-auto ${
         index === activeTab
           ? "bg-my-blue-gradient text-white"
           : "border"

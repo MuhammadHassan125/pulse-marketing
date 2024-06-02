@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full py-4 lg:py-2 overflow-hidden">
+        <div className="w-full py-0 lg:py-2 overflow-hidden">
           <Slider {...settings}>
             <div className="w-full">
               <h1 className="poppins-medium text-[120px] w-full text-center whitespace-nowrap overflow-hidden text-transparent border-text">
@@ -62,7 +62,7 @@ const Footer = () => {
           <div>
             <h3 className="poppins-light text-[18px] md:text-[14px]">© 2024 Pulse Marketing Inc. All rights reserved.</h3>
           </div>
-          <div className="sm:flex md:flex mt-3 md:mt-0">
+          <div className="flex md:flex mt-3 md:mt-0">
             <div className="flex items-center md:border-r-2 pr-6 mr-6">
               <h3 className="poppins-light text-[18px] md:text-[14px]">Privacy Policy</h3>
             </div>

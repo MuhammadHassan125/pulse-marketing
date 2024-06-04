@@ -41,7 +41,7 @@ const BrandsSlider = () => {
 
   return (
     <>
-    <main className="w-full lg:w-[1200px] px-4 m-auto overflow-hidden">
+    <main className="lg:w-[90%] px-4 m-auto overflow-hidden">
       {/* <div className="md:w-[100%] flex flex-wrap justify-between items-center">
         {brandImagesArr.map((item, index) => (
           <div

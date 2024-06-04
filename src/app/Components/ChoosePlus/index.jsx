@@ -53,7 +53,7 @@ function ChoosePlus() {
   return (
     <>
 
-      <main className="w-full lg:w-full mx-auto px-8 ct-padding">
+      <main className="w-full lg:w-[75%] mx-auto px-8 ct-padding">
           <div className="md:flex flex-row justify-between items-center pb-10 md:pb-12">
           <div className=" w-[80%] md:w-[50%]">
             <Reveal>
@@ -62,7 +62,7 @@ function ChoosePlus() {
               </h1>
             </Reveal>
           </div>
-          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light text-justify font-light">
+          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light font-light">
             <Reveal>
               <p>
               Pulse empowers business leaders to achieve their objectives more
@@ -79,7 +79,7 @@ function ChoosePlus() {
       {/* <BrandsSlider /> */}
       <hr className="my-16" />
 
-      <main className="w-full lg:w-full mx-auto px-4 md:px-10">
+      <main className="w-full lg:w-[75%] mx-auto px-4 md:px-10 mx-auto">
         <div className="md:flex flex-row justify-between items-center pb-10 md:pb-12">
           <div className=" w-[80%] md:w-[50%]">
             <Reveal>
@@ -88,7 +88,7 @@ function ChoosePlus() {
               </h1>
             </Reveal>
           </div>
-          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light text-justify font-light">
+          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light  font-light">
             <Reveal>
               <p>
                 Join us on a journey to create something truly extraordinary.

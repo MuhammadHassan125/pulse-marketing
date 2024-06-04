@@ -25,7 +25,7 @@ const Header = () => {
                 <IoIosMail 
                 className='text-xl mr-1'
                 />
-                <p className='poppins-regular text-[13px] md:text-[15px]'><Link href="mailto:hi@pulsemarketing.io">hi@pulsemarketing.io</Link></p>
+                <p className='poppins-regular text-[11px] md:text-[15px]'><Link href="mailto:hi@pulsemarketing.io">hi@pulsemarketing.io</Link></p>
             </div>
 
         </main>

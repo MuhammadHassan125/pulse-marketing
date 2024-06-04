@@ -42,13 +42,11 @@ export default function ContentTab({ tabImage, setTabImage }) {
             <div className="justify-between items-center">
               <div className="w-[100%] justify-center items-center">
                 <h3 className="text-[#50A2D4] poppins-medium text-[20px]">01</h3>
-                <h1 className="poppins-medium text-4xl">web studio</h1>
+                <h1 className="poppins-medium text-4xl">The Monster</h1>
               </div>
               <div className="w-[100%]">
                 <p className="poppins-light font-light text-[14px] my-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim.
+                  Discover a world of music with Monster Music! Stream your favorite songs, create custom playlists, and explore new tunes with ease. Enjoy high-quality sound and a user-friendly interface. Download now and unleash the music monster in you!
                 </p>
               </div>
             </div>
@@ -60,15 +58,14 @@ export default function ContentTab({ tabImage, setTabImage }) {
             <div className="justify-between items-center">
               <div className="w-[100%] justify-center items-center">
                 <h3 className="text-[#50A2D4] poppins-medium text-[20px]">02</h3>
-                <h1 className="poppins-medium text-4xl">web design</h1>
+                <h1 className="poppins-medium text-4xl">Food App</h1>
               </div>
               <div className="w-[100%]">
                 <p className="poppins-light font-light text-[14px] my-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim.
+                Discover a world of culinary delights with our Food app! Browse thousands of recipes, order delicious meals from top restaurants, and explore local flavors. With user-friendly features and quick delivery options, satisfy your cravings effortlessly. Download now and embark on a mouthwatering journey!
                 </p>
               </div>
+              
             </div>
           </main>
         </TabPanel>
@@ -78,13 +75,11 @@ export default function ContentTab({ tabImage, setTabImage }) {
             <div className="justify-between items-center">
               <div className="w-[100%] justify-center items-center">
                 <h3 className="text-[#50A2D4] poppins-medium text-[20px]">03</h3>
-                <h1 className="poppins-medium text-4xl">mobile app</h1>
+                <h1 className="poppins-medium text-4xl">Fintech App</h1>
               </div>
               <div className="w-[100%]">
                 <p className="poppins-light font-light text-[14px] my-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim.
+                Manage your finances effortlessly with our Fintech app! Track expenses, budget smartly, and make secure transactions. Enjoy real-time updates, personalized insights, and easy-to-use features designed to help you achieve your financial goals. Download now and take control of your financial future!
                 </p>
               </div>
             </div>

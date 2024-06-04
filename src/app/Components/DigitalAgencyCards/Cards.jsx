@@ -27,7 +27,7 @@ const UpperTextComponent = () => {
       </main> */}
 
 <main>
-          <div className="md:flex flex-row justify-between items-center pb-10 md:pb-12">
+          <div className="lg:w-[85%] md:flex flex-row justify-between items-center pb-10 md:pb-12 m-auto">
           <div className=" w-[80%] md:w-[50%]">
             <Reveal>
               <h1 className="poppins-medium text-5xl ct-heading">
@@ -35,9 +35,9 @@ const UpperTextComponent = () => {
               </h1>
             </Reveal>
           </div>
-          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light text-justify font-light">
+          <div className="w-[90%] mt-6 md:mt-0 md:w-[50%] poppins-light font-light">
             <Reveal>
-              <p>
+              <p className="md:w-[60%] float-right">
               Elevate your brands success with Pulse - Your trusted partner for
               cutting-edge digital solutions and unparalleled customer care in
               the USA.{" "}
@@ -53,11 +53,11 @@ const UpperTextComponent = () => {
 const Cards = () => {
   return (
     <>
-      <main className="w-full lg:w-full m-auto pt-16 card-section">
+      <main className="w-full lg:w-[85%] m-auto pt-16 card-section">
         <div className="w-full  m-auto px-10">
           <UpperTextComponent />
 
-          <div className="w-full flex flex-wrap justify-between items-center px-8 lg:px-0">
+          <div className="lg:w-[85%] w-full flex flex-wrap justify-between items-center px-8 lg:px-0 mx-auto">
             {/* card -one  */}
             <div className="w-[48%] lg:w-[16%] py-12 rounded-2xl relative bg-my-blue-gradient rotate-[-8deg] z-10 hover:scale-110 hover:rotate-0 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300">
               <div className="flex flex-col gap-4 justify-center translate-x-6">

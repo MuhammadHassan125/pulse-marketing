@@ -19,18 +19,18 @@ const Calender = () => {
 
   return (
     <>
-      <main className="w-full lg:w-full m-auto py-16 md:px-10">
+      <main className="w-full lg:w-[75%] m-auto py-16 md:px-10">
         <div className="lg:flex justify-between items-center">
           {/* left side content  */}
           <div className="w-[100%] px-8 lg:px-0 lg:w-[50%] mb-14 lg:mb-0">
             <Reveal>
-            <h2 className="poppins-medium text-[2rem]">
+            <h2 className="poppins-medium text-[3rem]">
               Got a Project Or a <br />
               Partnership In Your Mind?
             </h2>
             </Reveal>
 
-            <div className="poppins-light text-[14px] w-[70%] py-4">
+            <div className="poppins-light text-[16px] w-[70%] py-4">
               <Reveal>
               <p>
                 Our clients are our biggest advocates. See what they have to say

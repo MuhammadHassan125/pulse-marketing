@@ -779,7 +779,7 @@ export default function Tabs() {
     <>
       <main className=" w-full lg:w-full m-auto pb-14">
         <div>
-        <div className="flex flex-wrap justify-center gap-8 mb-4 md:mb-14 mx-auto px-4 lg:px-0">
+        <div className="flex flex-wrap justify-center gap-8 mb-4 md:mb-14 mx-auto px-4 lg:px-0 lg:w-[80%]">
   {tabs.map((tab, index) => (
     <button
       key={index}
@@ -796,7 +796,7 @@ export default function Tabs() {
 </div>
 
 
-          <div ref={tabContentRef} className="px-6 md:px-2 py-2">
+          <div ref={tabContentRef} className="px-6 md:px-2 py-2 lg:w-[80%] mx-auto">
             {tabs[activeTab].content}
           </div>
         </div>

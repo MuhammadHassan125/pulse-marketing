@@ -9,9 +9,9 @@ const Projects = () => {
 
   return (
     <>
-      <main className="w-full bg-white text-[#050023] flex-col-reverse md:flex md:flex-row lg:flex justify-between ">
+      <main className="w-full flex-col-reverse md:flex md:flex-row lg:flex justify-between ">
         {/* project section left box  */}
-        <div className="w-[90%] rounded-md p-5 md:p-0 mx-auto md:mx-0 md:w-[40%] flex items-center justify-center  ">
+        <div className="w-[90%] rounded-md p-5 md:p-0 mx-auto md:mx-0 md:w-[40%] flex items-center justify-center ">
           {tabImage === 0 && (
             <Image src={"/mob-app01.png"} alt="mob1" width={200} height={200} />
           )}

@@ -117,12 +117,12 @@ export const HeroRightContent = () => {
     setShowForm(!showForm);
   };
 
-  const firstImageUrl = '/web banner-01.png';
+  const firstImageUrl = "/web banner-01.png";
 
   return (
     <>
-       <div className=" h-[120vh]">
-      {/* <div className="flex justify-between w-full">
+      <div className=" h-[120vh]">
+        {/* <div className="flex justify-between w-full">
         <div className="w-[33%] h-[120vh] overflow-hidden relative">
           <div className="absolute inset-0 gallery-image">
             <Image
@@ -152,72 +152,144 @@ export const HeroRightContent = () => {
             />
           </div>
         </div>  */}
-  <div class="block-33 display--inline-top">
-        <div class="gutter relative">
+        <div class="block-33 display--inline-top">
+          <div class="gutter relative">
             <div class="gallery-h">
-                <div class="gallery-image relative">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img first-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              <div class="gallery-image relative">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-04.jpg" }}
+                  ></div>
                 </div>
-                <div class="gallery-image">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img first-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              </div>
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-05.jpg" }}
+                  ></div>
                 </div>
-                <div class="gallery-image">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img first-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+              </div>
 
-    <div class="block-33 display--inline-top">
-        <div class="gutter relative">
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-06.jpg" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-07.jpg" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-08.jpg" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-09.jpg" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-10.jpg" }}
+                  ></div>
+                </div>
+              </div>
+
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img first-banner"
+                    style={{ backgroundImage: "/web banner-11.jpg" }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block-33 display--inline-top">
+          <div class="gutter relative">
             <div class="gallery-h gallery-h--tb">
-                <div class="gallery-image relative">
-                    <div class="gallery-image__img relative">
-                        <div class="fill-dimensions cover-img second-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              <div class="gallery-image relative">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img second-banner"
+                    style={{ backgroundImage: "/web banner-02.png" }}
+                  ></div>
                 </div>
-                <div class="gallery-image">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img second-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              </div>
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img second-banner"
+                    style={{ backgroundImage: "/web banner-02.png" }}
+                  ></div>
                 </div>
-                <div class="gallery-image">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img second-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              </div>
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img second-banner"
+                    style={{ backgroundImage: "/web banner-02.png" }}
+                  ></div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="block-33 display--inline-top">
-        <div class="gutter relative">
+        <div class="block-33 display--inline-top">
+          <div class="gutter relative">
             <div class="gallery-h">
-                <div class="gallery-image relative">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img third-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              <div class="gallery-image relative">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img third-banner"
+                    style={{ backgroundImage: "/web banner-02.png" }}
+                  ></div>
                 </div>
-                <div class="gallery-image">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img third-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              </div>
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img third-banner"
+                    style={{ backgroundImage: "/web banner-02.png" }}
+                  ></div>
                 </div>
-                <div class="gallery-image">
-                    <div class="gallery-image__img relative">
-                    <div class="fill-dimensions cover-img third-banner" style={{backgroundImage:'/web banner-02.png'}}></div>
-                    </div>
+              </div>
+              <div class="gallery-image">
+                <div class="gallery-image__img relative">
+                  <div
+                    class="fill-dimensions cover-img third-banner"
+                    style={{ backgroundImage: "/web banner-02.png" }}
+                  ></div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-  
 
         {showForm && (
           <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[30%] -translate-y-20 absolute bottom-0 right-0">

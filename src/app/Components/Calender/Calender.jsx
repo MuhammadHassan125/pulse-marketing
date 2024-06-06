@@ -24,7 +24,7 @@ const Calender = () => {
           {/* left side content  */}
           <div className="w-[100%] px-8 lg:px-0 lg:w-[50%] mb-14 lg:mb-0">
             <Reveal>
-            <h2 className="poppins-medium text-[3rem]">
+            <h2 className="poppins-medium text-[1.5rem] md:text-[3rem]">
               Got a Project Or a <br />
               Partnership In Your Mind?
             </h2>

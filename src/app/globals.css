@@ -565,3 +565,28 @@ overflow: hidden;
         transform: translate3d(0, 0, 0)
     }
 }
+
+
+
+@media screen and (max-width: 600px) {
+  .cursor {
+    display: none !important;
+}
+
+.flower-cursor {
+    display: none !important;
+}
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}

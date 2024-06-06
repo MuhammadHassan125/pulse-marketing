@@ -3,18 +3,19 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Slider from "react-slick";
+import TextScroller from "./TextScroller";
 
 const Footer = () => {
-  const settings = {
-    dots: false, 
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 7000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-  };
+  // const settings = {
+  //   dots: false, 
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 7000,
+  //   autoplaySpeed: 2000,
+  //   cssEase: "linear",
+  // };
 
   return (
     <>
@@ -38,26 +39,30 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full py-0 lg:py-2 overflow-hidden">
-          <Slider {...settings}>
-            <div className="w-full">
-              <h1 className="poppins-medium text-[120px] w-full text-center whitespace-nowrap overflow-hidden text-transparent border-text">
-                Innovate. Create. Succeed: Your Journey Begins Here!
-              </h1>
-            </div>
-            <div className="w-full">
-              <h1 className="poppins-medium text-[120px] w-full text-center whitespace-nowrap overflow-hidden text-transparent border-text">
-                Drive Your Business to New Heights!
-              </h1>
-            </div>
-            <div className="w-full">
-              <h1 className="poppins-medium text-[120px] w-full text-center whitespace-nowrap overflow-hidden text-transparent border-text">
-                Join the Revolution in Marketing!
-              </h1>
-            </div>
-          </Slider>
+        <div className="flex items-center W-[100%] justify-center poppins-medium text-[4rem] lg:text-[100px] text-center overflow-hidden whitespace-nowrap text-transparent border-text w-full py-0 lg:py-2">
+         <TextScroller text="Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing!"/>
         </div>
 
+        {/* <div className="w-full py-0 lg:py-2">
+      <Slider {...settings}>
+        <div className="flex justify-center items-center w-auto">
+          <h1 className="poppins-medium text-[4rem] lg:text-[100px] text-center overflow-hidden whitespace-nowrap text-transparent border-text">
+            Innovate. Create. Succeed: Your Journey Begins Here!
+          </h1>
+        </div>
+        <div className="flex justify-center items-center w-auto">
+          <h1 className="poppins-medium text-[4rem] lg:text-[100px] text-center overflow-hidden whitespace-nowrap text-transparent border-text">
+            Drive Your Business to New Heights!
+          </h1>
+        </div>
+        <div className="flex justify-center items-center w-auto">
+          <h1 className="poppins-medium text-[4rem] lg:text-[100px] text-center whitespace-nowrap overflow-hidden text-transparent border-text">
+            Join the Revolution in Marketing!
+          </h1>
+        </div>
+      </Slider>
+    </div> */}
+    
         <div className="w-full px-8 lg:px-0 lg:w-[90%] mx-auto md:flex justify-between items-center">
           <div>
             <h3 className="poppins-light text-[18px] md:text-[14px]">© 2024 Pulse Marketing Inc. All rights reserved.</h3>

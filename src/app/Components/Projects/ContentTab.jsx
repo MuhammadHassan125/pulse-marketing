@@ -143,9 +143,9 @@ export default function ContentTab({ tabImage, setTabImage }) {
               onClick={handlePrevious}
               value="prev"
               sx={{
-                color: "#ffffff",
+                color: "#050023",
                 "&.Mui-selected": {
-                  color: "#ffffff",
+                  color: "#050023",
                   fontFamily: "Poppins",
                 },
               }}
@@ -153,8 +153,8 @@ export default function ContentTab({ tabImage, setTabImage }) {
             <Tab
               label={
                 <Box sx={{ display: "flex", alignItems: "center" }}>
-                  <span className="text-[12px] poppins-light">Next</span>
-                  <IoMdArrowForward style={{ marginLeft: 8 }} />
+                  <span className="text-[12px] poppins-light text-[#050023]">Next</span>
+                  <IoMdArrowForward style={{ marginLeft: 8, color:'#050023' }} />
                 </Box>
               }
               onClick={handleNext}

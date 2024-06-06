@@ -8,7 +8,7 @@ const UpperTextTestimonials = () => {
   return (
     <>
       <main>
-          <div className="lg:w-[90%] w-[90%] md:flex flex-row justify-between items-center pb-10 md:pb-12 m-auto">
+          <div className="lg:w-[90%] w-[90%] text-[#050023] md:flex flex-row justify-between items-center pb-10 md:py-12 m-auto">
           <div className=" w-[80%] md:w-[50%]">
             <Reveal>
               <h1 className="poppins-medium text-5xl ct-heading">
@@ -69,7 +69,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <main className="w-full lg:w-[75%] m-auto py-20 md:pt-0 md:px-10 testimonial">
+      <main className="w-full lg:px-[13rem] bg-white m-auto py-20 md:pt-0 md:px-10 testimonial">
         <UpperTextTestimonials />
         <div className="slider-container w-[90%] lg:w-[75%] py-20 m-auto bg-[#050023] shadow-lg border-[#110351]  rounded-3xl ">
           <Slider {...settings}>

@@ -6,7 +6,7 @@ import { IoIosMail } from "react-icons/io";
 const Header = () => {
   return (
     <>
-        <main className='w-full lg:w-[100%] lg:mx-auto md:px-8 lg:px-4 flex my-4 md:my-0 justify-between h-24 items-center absolute header'>
+        <main className='w-full z-20 lg:w-[100%] lg:mx-auto md:px-8 lg:px-4 flex my-4 md:my-0 justify-between h-24 items-center absolute header'>
 
             {/* logo  */}
             <div className='w-100'>

@@ -10,6 +10,12 @@ module.exports = {
       boxShadow: {
         'glow': '0 0 5px rgba(0, 255, 255, 0.7)',
       },
+      colors: {
+        main: '#50a2d4',
+      },
+      boxShadow: {
+        'main': '0px 2px 3px rgba(20, 16, 12, 0.4)',
+      },
       filter: {
         invert: 'invert(1)',
       },

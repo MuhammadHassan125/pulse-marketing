@@ -781,7 +781,7 @@ export default function Tabs() {
         <div>
         <div className=" flex-wrap justify-center flex   gap-8 mb-4 md:mb-14 mx-auto px-4 lg:px-0 lg:w-[80%]">
   {tabs.map((tab, index) => (
-    <button
+    <buttons
       key={index}
       className={`py-4 px-4 md:px-10 rounded w-[45%] flex md:flex-[0_0_17%] text-center items-center justify-center md:w-auto ${
         index === activeTab
@@ -791,7 +791,7 @@ export default function Tabs() {
       onClick={() => setActiveTab(index)}
     >
       {tab.label}
-    </button>
+    </buttons>
   ))}
 </div>
 

@@ -122,6 +122,7 @@ export const HeroRightContent = () => {
   return (
     <>
       <div className=" h-[120vh]">
+     
         {/* <div className="flex justify-between w-full">
         <div className="w-[33%] h-[120vh] overflow-hidden relative">
           <div className="absolute inset-0 gallery-image">
@@ -152,75 +153,73 @@ export const HeroRightContent = () => {
             />
           </div>
         </div>  */}
-        <div class="block-33 display--inline-top">
-          <div class="gutter relative">
-            <div class="gallery-h">
-              <div class="gallery-image relative">
-                <div class="gallery-image__img relative">
+        
+        <div className="block-33 display--inline-top">
+          <div className="gutter relative">
+            <div className="gallery-h">
+              <div className="gallery-image relative">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
-                    style={{ backgroundImage: "/web banner-04.jpg" }}
+                    className="fill-dimensions cover-img first-banner-img"
                   ></div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
-                    style={{ backgroundImage: "/web banner-05.jpg" }}
-                  ></div>
-                </div>
-              </div>
-
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
-                  <div
-                    class="fill-dimensions cover-img first-banner"
-                    style={{ backgroundImage: "/web banner-06.jpg" }}
+                    className="fill-dimensions cover-img first-banner-img2"
                   ></div>
                 </div>
               </div>
 
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
+                    className="fill-dimensions cover-img first-banner-img3"
+                  ></div>
+                </div>
+              </div>
+
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
+                  <div
+                    className="fill-dimensions cover-img first-banner-img4"
                     style={{ backgroundImage: "/web banner-07.jpg" }}
                   ></div>
                 </div>
               </div>
 
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
+                    className="fill-dimensions cover-img first-banner-img5"
                     style={{ backgroundImage: "/web banner-08.jpg" }}
                   ></div>
                 </div>
               </div>
 
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
+                    className="fill-dimensions cover-img first-banner-img6"
                     style={{ backgroundImage: "/web banner-09.jpg" }}
                   ></div>
                 </div>
               </div>
 
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
+                    className="fill-dimensions cover-img first-banner-img7"
                     style={{ backgroundImage: "/web banner-10.jpg" }}
                   ></div>
                 </div>
               </div>
 
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img first-banner"
+                    className="fill-dimensions cover-img first-banner-img8"
                     style={{ backgroundImage: "/web banner-11.jpg" }}
                   ></div>
                 </div>
@@ -229,30 +228,42 @@ export const HeroRightContent = () => {
           </div>
         </div>
 
-        <div class="block-33 display--inline-top">
-          <div class="gutter relative">
-            <div class="gallery-h gallery-h--tb">
-              <div class="gallery-image relative">
-                <div class="gallery-image__img relative">
+        <div className="block-33 display--inline-top">
+          <div className="gutter relative">
+            <div className="gallery-h gallery-h--tb">
+              <div className="gallery-image relative">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img second-banner"
+                    className="fill-dimensions cover-img second-banner"
+                  ></div>
+                </div>
+              </div>
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
+                  <div
+                    className="fill-dimensions cover-img second-banner-img2"
                     style={{ backgroundImage: "/web banner-02.png" }}
                   ></div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img second-banner"
-                    style={{ backgroundImage: "/web banner-02.png" }}
+                    className="fill-dimensions cover-img second-banner-img3"
                   ></div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img second-banner"
-                    style={{ backgroundImage: "/web banner-02.png" }}
+                    className="fill-dimensions cover-img second-banner-img4"
+                  ></div>
+                </div>
+              </div>
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
+                  <div
+                    className="fill-dimensions cover-img second-banner-img5"
                   ></div>
                 </div>
               </div>
@@ -260,33 +271,53 @@ export const HeroRightContent = () => {
           </div>
         </div>
 
-        <div class="block-33 display--inline-top">
-          <div class="gutter relative">
-            <div class="gallery-h">
-              <div class="gallery-image relative">
-                <div class="gallery-image__img relative">
+        <div className="block-33 display--inline-top">
+          <div className="gutter relative">
+            <div className="gallery-h">
+              <div className="gallery-image relative">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img third-banner"
-                    style={{ backgroundImage: "/web banner-02.png" }}
+                    className="fill-dimensions cover-img third-banner"
                   ></div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img third-banner"
-                    style={{ backgroundImage: "/web banner-02.png" }}
+                    className="fill-dimensions cover-img third-banner-img1"
                   ></div>
                 </div>
               </div>
-              <div class="gallery-image">
-                <div class="gallery-image__img relative">
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
                   <div
-                    class="fill-dimensions cover-img third-banner"
-                    style={{ backgroundImage: "/web banner-02.png" }}
+                    className="fill-dimensions cover-img third-banner-img2"
                   ></div>
                 </div>
               </div>
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
+                  <div
+                    className="fill-dimensions cover-img third-banner-img3"
+                  ></div>
+                </div>
+              </div>
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
+                  <div
+                    className="fill-dimensions cover-img third-banner-img4"
+                  ></div>
+                </div>
+              </div>
+
+              <div className="gallery-image">
+                <div className="gallery-image__img relative">
+                  <div
+                    className="fill-dimensions cover-img third-banner-img5"
+                  ></div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>

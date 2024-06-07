@@ -79,7 +79,7 @@ function ChoosePlus() {
       {/* <BrandsSlider /> */}
       <hr className="my-16" />
 
-      <main className="w-full lg:w-[75%] mx-auto px-4 md:px-10 mx-auto">
+      <main className="w-full lg:w-[77%] mx-auto px-4  md:px-0">
         <div className="md:flex flex-row justify-between items-center pb-10 md:pb-12">
           <div className=" w-[80%] md:w-[50%]">
             <Reveal>

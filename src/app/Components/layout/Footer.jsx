@@ -4,6 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Slider from "react-slick";
 import TextScroller from "./TextScroller";
+import Link from "next/link";
 
 const Footer = () => {
   // const settings = {
@@ -28,12 +29,16 @@ const Footer = () => {
           <div>
             <div className="md:flex mt-3 md:mt-0">
               <div className="flex items-center md:border-r-2 pr-6 mr-6">
+                <Link className="flex items-center" href="tel:+1 844 330 3141" target="_blank">
                 <FaPhoneAlt />
                 <h3 className="poppins-light ml-3 text-md">+1 844 330 3141</h3>
+                </Link>
               </div>
               <div className="flex items-center">
+                <Link className="flex items-center" href="mailto:hi@pulsemarketing.io" target="_blank">
                 <MdEmail className="text-xl" />
                 <h3 className="poppins-light ml-3 text-md">hi@pulsemarketing.io</h3>
+                </Link>
               </div>
             </div>
           </div>
@@ -43,25 +48,6 @@ const Footer = () => {
          <TextScroller text="Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing!"/>
         </div>
 
-        {/* <div className="w-full py-0 lg:py-2">
-      <Slider {...settings}>
-        <div className="flex justify-center items-center w-auto">
-          <h1 className="poppins-medium text-[4rem] lg:text-[100px] text-center overflow-hidden whitespace-nowrap text-transparent border-text">
-            Innovate. Create. Succeed: Your Journey Begins Here!
-          </h1>
-        </div>
-        <div className="flex justify-center items-center w-auto">
-          <h1 className="poppins-medium text-[4rem] lg:text-[100px] text-center overflow-hidden whitespace-nowrap text-transparent border-text">
-            Drive Your Business to New Heights!
-          </h1>
-        </div>
-        <div className="flex justify-center items-center w-auto">
-          <h1 className="poppins-medium text-[4rem] lg:text-[100px] text-center whitespace-nowrap overflow-hidden text-transparent border-text">
-            Join the Revolution in Marketing!
-          </h1>
-        </div>
-      </Slider>
-    </div> */}
     
         <div className="w-full px-8 lg:px-0 lg:w-[90%] mx-auto md:flex justify-between items-center">
           <div>
@@ -69,10 +55,14 @@ const Footer = () => {
           </div>
           <div className="flex md:flex mt-3 md:mt-0">
             <div className="flex items-center md:border-r-2 pr-6 mr-6">
+              <Link href={'https://pulsemarketing.io/privacy'} target="_blank">
               <h3 className="poppins-light text-[18px] md:text-[14px]">Privacy Policy</h3>
+              </Link>
             </div>
             <div className="flex items-center">
+              <Link href={'https://pulsemarketing.io/terms-and-conditions/'} target="_blank">
               <h3 className="poppins-light text-[18px] md:text-[14px]">Terms & Conditions</h3>
+              </Link>
             </div>
           </div>
         </div>

@@ -175,10 +175,10 @@ const WebsiteAuditForm = () => {
       >
           <div className="modal-content">
 
-        <div className="audit-form">
-          <RiCloseLargeFill className='absolute top-2 right-5 cursor-pointer hover:bg-black hover:text-white rounded-full text-xl' onClick={() => setShowModal(false)} />
+        <div className="audit-form bg-my-blue-gradient" >
+          <RiCloseLargeFill className='absolute top-2 right-5 cursor-pointer  rounded-full text-xl' onClick={() => setShowModal(false)} />
 
-         <div id="so-titleso1717549071" className="text-2xl font-semibold text-black text-center mb-2">Audit Your Website's Performance.</div>
+         <div id="so-titleso1717549071" className="text-2xl font-semibold text-white text-center mb-2">Audit Your Website's Performance.</div>
       <form
         id="auditForm"
         className="form-container"
@@ -186,7 +186,7 @@ const WebsiteAuditForm = () => {
         data-behaviour="modal"
       >
 
-        <label htmlFor="so-first-name">First Name:</label>
+        <label htmlFor="so-first-name " >First Name:</label>
         <input
           type="text"
           id="so-first-name"
@@ -223,7 +223,7 @@ const WebsiteAuditForm = () => {
           data-validation="Please enter a valid phone number"
         />
 
-        <button type="submit" id="so-button" title="Submit">
+        <button type="submit" id="so-button" title="Submit" className='bg-my-green shadow-md'>
           Submit
         </button>
       </form>

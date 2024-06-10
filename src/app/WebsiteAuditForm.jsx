@@ -223,7 +223,7 @@ const WebsiteAuditForm = () => {
           data-validation="Please enter a valid phone number"
         />
 
-        <button type="submit" id="so-button" title="Submit" className='bg-my-green shadow-md'>
+        <button type="submit" id="so-button" title="Submit" className='bg-black shadow-md'>
           Submit
         </button>
       </form>

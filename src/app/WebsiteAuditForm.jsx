@@ -2,10 +2,12 @@
 import React, { useEffect, useState } from 'react';
 import Modal from '@mui/material/Modal';
 import { RiCloseLargeFill } from "react-icons/ri";
+import { useMediaQuery } from '@mui/material';
 
 const WebsiteAuditForm = () => {
 
     const [showModal, setShowModal] = useState(false);
+    const isSmallScreen = useMediaQuery('(max-width:800px)');
 
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -166,7 +168,8 @@ const WebsiteAuditForm = () => {
                   border: "none",
                   borderRadius: "10px",
                   margin: "0 auto",
-                  width: "40%",
+                  width: "40%", 
+                  width: isSmallScreen ? "80%" : "40%", // Adjust width based on screen size
                 }}
             >
                 <div className="so-container translate-y-[30%] py-6 bg-my-blue-gradient">

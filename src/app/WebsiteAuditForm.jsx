@@ -169,7 +169,7 @@ const WebsiteAuditForm = () => {
                   borderRadius: "10px",
                   margin: "0 auto",
                   width: "40%", 
-                  width: isSmallScreen ? "80%" : "40%", // Adjust width based on screen size
+                  width: isSmallScreen ? "80%" : "40%",
                 }}
             >
                 <div className="so-container translate-y-[30%] py-6 bg-my-blue-gradient">

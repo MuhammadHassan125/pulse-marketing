@@ -5,8 +5,8 @@ import CustomCursor from "./utils/CustomCursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Pulse Marketing",
-  description: "The pulse Marketing Web App",
+  title: "Sales-Focused Marketing",
+  description: "Our Objective: Increase Your Revenue",
 };
 
 export default function RootLayout({ children }) {

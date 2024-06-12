@@ -39,9 +39,9 @@ export default function Tabs() {
           {/* ---------  */}
 
           <div className="m-auto cursor-n-resize window">
-            <Link href="https://www.clouarchitects.com/" target="_blank">
+            <Link href="https://www.armadillo.one/" target="_blank">
               <Image
-                src="/animated02.webp"
+                src="/img-tab (1).jpg"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
                 width={100}
@@ -75,9 +75,9 @@ export default function Tabs() {
           </div>
 
           <div className="m-auto cursor-n-resize window"> 
-            <Link href="https://www.oneupstudio.it/" target="_blank">
+            <Link href="https://nhtiusa.com/" target="_blank">
               <Image
-                src="/animated05.webp"
+                src="/img-tab (2).jpg"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
                 width={180}
@@ -87,11 +87,11 @@ export default function Tabs() {
           </div>
           
           <div className="m-auto cursor-n-resize window">
-            <Link href="https://www.steelwavellc.com/" target="_blank">
+            <Link href="https://fuzelogistics.com/en/" target="_blank">
               <Image
-                src="/animated06.webp"
+                src="/img-tab (3).jpg"
                 alt="Image 1"
-                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                className="image w-full h-auto rounded  object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
                 width={180}
                 height={400}
               />
@@ -771,7 +771,7 @@ export default function Tabs() {
     gsap.fromTo(
       images,
       { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, stagger: 0.3 }
+      { y: 0, opacity: 0, duration: 1, stagger: 0.3 }
     );
   }, [activeTab]);
 

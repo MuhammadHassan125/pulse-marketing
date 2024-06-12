@@ -746,3 +746,112 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+
+#so-form {
+  margin: 10px!important;
+}
+#so-fieldswrapso1717549071 {
+  width: 300px!important;
+}
+.so-fieldso1717549071 {
+  background-color: #FFFFFF!important;
+  border: 1px solid #e3e3e3!important;
+  border-radius: 4px !important;
+  color: #565656!important;
+  padding: 7px 12px!important;
+  font-size: 18px!important;
+  box-sizing: border-box !important;
+  height: 45px!important; 
+  width: 100%!important; 
+  display: block!important; 
+  margin-top: 5px!important;
+}
+.so-fieldso1717549071::placeholder {
+  color: #777777!important;
+}
+
+@media screen and (max-width: 345px){
+  .so-fieldso1717549071 {
+      min-width: 100px!important;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .so-fieldso1717549071 {
+      font-size: 12px !important;
+      height: 30px !important;
+  }
+
+  #so-submitso1717549071 {
+      font-size: 12px !important;
+      height: 30px;
+      padding: 1px 20px !important;
+  }
+
+  #so-fieldswrapso1717549071 {
+      width: 100%;
+  }
+
+}
+
+#so-submitso1717549071 {
+  background-color: #253fa4!important;
+  border: 1px solid #253fa4!important;
+  color: #ffffff!important;
+  border-radius: 4px !important;
+  text-decoration: none!important;
+  cursor: pointer!important;
+  box-sizing: border-box !important;
+  height: 45px!important; 
+  font-size: 18px!important; 
+line-height: 18px!important; 
+  display: block!important; 
+  padding: 8px 50px!important; 
+  margin: 5px auto!important;
+}
+
+
+@media screen and (max-width: 500px){
+  #so-submitso1717549071 {
+      font-size: 12px!important;
+      height: 30px!important;
+      padding: 1px 20px !important;
+  }
+}
+
+.so-container {
+  width: 100%;
+  text-align: center;
+}
+.so-widget-form {
+  display: inline-block !important;
+}
+#so-boxso1717549071 {
+  display: inline-block;
+}
+#so-titleso1717549071 {
+  margin-bottom: 5px;
+  font-size: 26px !important;
+  color: #777777 !important;
+}
+
+@media screen and (max-width: 500px){
+  #so-titleso1717549071 {
+      font-size: 13px !important;
+  }
+
+  #so-paragraphso1717549071 {
+      font-size: 10px !important;
+  }
+
+  #so-consentso1717549071 span {
+      font-size: 10px !important;
+  }
+}
+
+#so-paragraphso1717549071 {
+  margin-bottom: 10px;
+  font-size: 14px !important;
+  color: #777777 !important;
+}

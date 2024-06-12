@@ -326,7 +326,7 @@ const HeroSection = () => {
               </Link>
 
               <Link
-                href={"https://www.youtube.com/@ianslater3586"}
+                href={"https://www.youtube.com/watch?v=mEhNo-fnGxU"}
                 target="_blank"
               >
                 <div

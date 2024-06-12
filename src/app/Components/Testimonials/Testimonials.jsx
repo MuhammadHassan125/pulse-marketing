@@ -9,21 +9,22 @@ const UpperTextTestimonials = () => {
     <>
       <main>
         <div className="lg:w-[90%] w-[90%] md:flex flex-row justify-between items-center pb-10 md:pb-12 m-auto">
-          <div className=" w-[80%] md:w-[50%]">
+          <div className=" w-[80%] md:w-[100%] text-center">
             <Reveal>
               <h1 className="poppins-medium text-5xl ct-heading">
-                Our clients are our biggest
+                {/* Our clients are our biggest */}
+                Our clients are our biggest advocates.
               </h1>
             </Reveal>
           </div>
-          <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light font-light">
+          {/* <div className="w-[90%] mt-6 md:mt-0 md:w-[35%] poppins-light font-light">
             <Reveal>
               <p>
                 Our clients are our biggest advocates. See what they have to say
                 about working with us.
               </p>
             </Reveal>
-          </div>
+          </div> */}
         </div>
       </main>
     </>

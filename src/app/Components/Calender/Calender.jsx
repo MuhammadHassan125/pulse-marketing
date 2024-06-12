@@ -25,16 +25,17 @@ const Calender = () => {
           <div className="w-[100%] px-8 lg:px-0 lg:w-[50%] mb-14 lg:mb-0">
             <Reveal>
             <h2 className="poppins-medium text-[1.5rem] md:text-[3rem]">
-              Got a Project Or a <br />
-              Partnership In Your Mind?
+            Got Am Project <br />
+               Or Partnership In Mind?
+
             </h2>
             </Reveal>
 
-            <div className="poppins-light text-[16px] w-[70%] py-4">
+            <div className="poppins-light text-[16px] w-[80%] py-4">
               <Reveal>
               <p>
-                Our clients are our biggest advocates. See what they have to say
-                about working with us.
+              Boost your brand with our expert websites, apps, and branding solutions. Bring your vision to life with
+              Pulse.
               </p>
               </Reveal>
             </div>

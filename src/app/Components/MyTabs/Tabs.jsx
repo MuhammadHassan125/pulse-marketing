@@ -31,8 +31,8 @@ export default function Tabs() {
                 src="/animated01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={100}
+                height={100}
               />
             </Link>
           </div>
@@ -43,9 +43,9 @@ export default function Tabs() {
               <Image
                 src="/animated02.webp"
                 alt="Image 1"
-                className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                className="image w-full h-auto rounded object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={100}
+                height={100}
               />
             </Link>
           </div>

@@ -5,17 +5,13 @@ import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 import { Reveal } from "../../utils/Reveal";
 import Link from "next/link";
-export const HeroLeftContent = () => {
-  const [showForm, setShowForm] = useState(false);
 
-  const toggleForm = () => {
-    setShowForm(!showForm);
-  };
+export const HeroLeftContent = ({ toggleForm }) => {
   return (
     <>
       <main className="w-full mt-16 lg:mt-0 px-5 hre-section">
         {/* upper logos container*/}
-        <div className=" flex ">
+        <div className="flex">
           <Reveal>
             <Link
               href={
@@ -53,7 +49,7 @@ export const HeroLeftContent = () => {
         {/* Content Heading  */}
         <div>
           <Reveal>
-            <h1 className="text-[1.5em] md:text-[60px] lg:text-[55px]  mt-8 lg:mt-2 poppins-medium leading-[49px] md:leading-[1.3em]">
+            <h1 className="text-[1.5em] md:text-[60px] lg:text-[55px] mt-8 lg:mt-2 poppins-medium leading-[49px] md:leading-[1.3em]">
               Our Objective
               <br /> Increase Your Revenue.
             </h1>
@@ -71,32 +67,19 @@ export const HeroLeftContent = () => {
 
         {/* Contact Us button  */}
         <Reveal>
-          <button className="bg-white hidden border border-main shadow-lg hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl md:flex justify-between items-center border-none outline-none contact-btn">
-            Contact Us
-            <div className="bg-[#6EE3D7] p-[2px] ml-2 h-full rounded-full">
-              <MdArrowForward />
-            </div>
-          </button>
+          <div onClick={toggleForm}>
+            <button
+              className="bg-white hidden border border-main shadow-lg hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl md:flex justify-between items-center border-none outline-none contact-btn"
+            >
+              Book Now
+              <div className="bg-[#6EE3D7] p-[2px] ml-2 h-full rounded-full">
+                <MdArrowForward />
+              </div>
+            </button>
+          </div>
         </Reveal>
 
         <div className="md:hidden">
-          {showForm && (
-            <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
-              <div className="w-full inset-0 flex justify-center items-center">
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-                  style={{
-                    width: "100%",
-                    height: "80%",
-                    border: "none",
-                    borderRadius: "3px",
-                  }}
-                  title="BookingFormWithWebsite"
-                ></iframe>
-              </div>
-            </div>
-          )}
-
           <div
             onClick={toggleForm}
             className="absolute bottom-0 right-0 w-[40%] md:w-[30%]-translate-y-16"
@@ -110,118 +93,60 @@ export const HeroLeftContent = () => {
     </>
   );
 };
-export const HeroRightContent = () => {
-  const [showForm, setShowForm] = useState(false);
 
-  const toggleForm = () => {
-    setShowForm(!showForm);
-  };
-
+export const HeroRightContent = ({ showForm, toggleForm }) => {
   const firstImageUrl = "/web banner-01.png";
 
   return (
     <>
-      <div className=" h-[120vh]">
-     
-        {/* <div className="flex justify-between w-full">
-        <div className="w-[33%] h-[120vh] overflow-hidden relative">
-          <div className="absolute inset-0 gallery-image">
-            <Image
-              alt="image"
-              src="/web banner-01.png"
-              layout="fill"
-              objectFit="cover"
-              className="absolute"
-            />
-          </div>
-        </div>
-      
-          <div className="w-[33%] h-[120vh] overflow-hidden">
-            <Image
-              alt="image"
-              src={"/web banner-02.png"}
-              width={1000}
-              height={400}
-            />
-          </div>
-          <div className="w-[33%] h-[120vh] overflow-hidden">
-            <Image
-              alt="image"
-              src={"/web banner-03.png"}
-              width={1000}
-              height={400}
-            />
-          </div>
-        </div>  */}
-        
+      <div className="h-[120vh]">
         <div className="block-33 display--inline-top">
           <div className="gutter relative">
             <div className="gallery-h">
               <div className="gallery-image relative">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img"
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img2"
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img2"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img3"
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img3"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img4"
-                    style={{ backgroundImage: "/web banner-07.jpg" }}
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img4"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img5"
-                    style={{ backgroundImage: "/web banner-08.jpg" }}
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img5"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img6"
-                    style={{ backgroundImage: "/web banner-09.jpg" }}
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img6"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img7"
-                    style={{ backgroundImage: "/web banner-10.jpg" }}
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img7"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img first-banner-img8"
-                    style={{ backgroundImage: "/web banner-11.jpg" }}
-                  ></div>
+                  <div className="fill-dimensions cover-img first-banner-img8"></div>
                 </div>
               </div>
             </div>
@@ -233,9 +158,7 @@ export const HeroRightContent = () => {
             <div className="gallery-h gallery-h--tb">
               <div className="gallery-image relative">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img second-banner"
-                  ></div>
+                  <div className="fill-dimensions cover-img second-banner"></div>
                 </div>
               </div>
               <div className="gallery-image">
@@ -248,23 +171,17 @@ export const HeroRightContent = () => {
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img second-banner-img3"
-                  ></div>
+                  <div className="fill-dimensions cover-img second-banner-img3"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img second-banner-img4"
-                  ></div>
+                  <div className="fill-dimensions cover-img second-banner-img4"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img second-banner-img5"
-                  ></div>
+                  <div className="fill-dimensions cover-img second-banner-img5"></div>
                 </div>
               </div>
             </div>
@@ -276,48 +193,35 @@ export const HeroRightContent = () => {
             <div className="gallery-h">
               <div className="gallery-image relative">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img third-banner"
-                  ></div>
+                  <div className="fill-dimensions cover-img third-banner"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img third-banner-img1"
-                  ></div>
+                  <div className="fill-dimensions cover-img third-banner-img1"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img third-banner-img2"
-                  ></div>
+                  <div className="fill-dimensions cover-img third-banner-img2"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img third-banner-img3"
-                  ></div>
+                  <div className="fill-dimensions cover-img third-banner-img3"></div>
                 </div>
               </div>
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img third-banner-img4"
-                  ></div>
+                  <div className="fill-dimensions cover-img third-banner-img4"></div>
                 </div>
               </div>
 
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
-                  <div
-                    className="fill-dimensions cover-img third-banner-img5"
-                  ></div>
+                  <div className="fill-dimensions cover-img third-banner-img5"></div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -353,6 +257,12 @@ export const HeroRightContent = () => {
 };
 
 const HeroSection = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm(!showForm);
+  };
+
   return (
     <>
       <main className="w-full lg:w-full m-auto relative">
@@ -361,15 +271,15 @@ const HeroSection = () => {
 
           <Header />
 
-          <div className="my-20 lg:my-0 flex flex-row  items-center w-[100%] lg:w-[50%]">
+          <div className="my-20 lg:my-0 flex flex-row items-center w-[100%] lg:w-[50%]">
             {/* social icon component  */}
-            <div className="w-[8%] flex flex-col gap-1 justify-center translate-x-0. social-logos">
+            <div className="w-[8%] flex flex-col gap-1 justify-center translate-x-0 social-logos">
               <Link
                 href={"https://www.facebook.com/pulsemarketing.io/"}
                 target="_blank"
               >
                 <div
-                  className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out
+                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out
                hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0"
                 >
                   <Image
@@ -386,7 +296,7 @@ const HeroSection = () => {
                 target="_blank"
               >
                 <div
-                  className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer 
+                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
                rounded-full flex items-center justify-center py-3"
                 >
                   <Image
@@ -403,7 +313,7 @@ const HeroSection = () => {
                 target="_blank"
               >
                 <div
-                  className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer 
+                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
               rounded-full flex items-center justify-center py-3"
                 >
                   <Image
@@ -420,7 +330,7 @@ const HeroSection = () => {
                 target="_blank"
               >
                 <div
-                  className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer
+                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer
                rounded-full flex items-center justify-center py-[14px]"
                 >
                   <Image
@@ -434,12 +344,12 @@ const HeroSection = () => {
             </div>
 
             <div>
-              <HeroLeftContent />
+              <HeroLeftContent toggleForm={toggleForm} />
             </div>
           </div>
 
           <div className="w-[50%] overflow-y-hidden hidden lg:block">
-            <HeroRightContent />
+            <HeroRightContent showForm={showForm} toggleForm={toggleForm} />
           </div>
         </div>
       </main>

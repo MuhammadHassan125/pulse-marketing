@@ -5,28 +5,7 @@ import React from "react";
 const UpperTextComponent = () => {
   return (
     <>
-      {/* <main>
-        <div className="w-full px-6 lg:px-0 lg:flex flex-row justify-between items-center py-20 md:pt-0">
-          <div className="w-[90%] lg:w-[30%] justify-center items-center">
-            <Reveal>
-            <h1 className="poppins-medium text-4xl">
-            </h1>
-            </Reveal>
-          </div>
-
-          <div className="w-[90%] pt-6 lg:pt-0 lg:w-[35%] poppins-light font-light">
-            <Reveal>
-            <p>
-              Elevate your brands success with Pulse - Your trusted partner for
-              cutting-edge digital solutions and unparalleled customer care in
-              the USA.{" "}
-            </p>
-            </Reveal>
-          </div>
-        </div>
-      </main> */}
-
-<main>
+    <main>
           <div className="lg:w-[85%] md:flex flex-row justify-between items-center pb-10 md:pb-12 m-auto">
           <div className=" w-[80%] md:w-[50%]">
             <Reveal>
@@ -90,7 +69,7 @@ const Cards = () => {
               <div className="flex flex-col gap-4 justify-center translate-x-6">
                 <Image alt="img-alt" src={"/img (5).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[2xl] md:text-[3xl]">
-                  Photography & <br />
+                  Photography <br/>& <br />
                   Videography
                 </h3>
               </div>
@@ -103,7 +82,7 @@ const Cards = () => {
               <div className="flex flex-col gap-4 justify-center translate-x-6">
                 <Image alt="img-alt" src={"/img (4).png"} width={40} height={40} />
                 <h3 className="poppins-medium text-[xl] w-[50%] md:w-full">
-                  Online Reputation <br />
+                  Online <br/>Reputation <br />
                   Management
                 </h3>
               </div>

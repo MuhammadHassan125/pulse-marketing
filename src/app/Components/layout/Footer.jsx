@@ -31,14 +31,14 @@ const Footer = () => {
               <div className="flex items-center md:border-r-2 pr-6 mr-6">
                 <Link className="flex items-center" href="tel:18443303141" target="_blank">
                 <FaPhoneAlt />
-                <h3 className="poppins-light ml-3 text-md">18443303141
+                <h3 className="poppins-light ml-3  text-[14px]" >18443303141
                 </h3>
                 </Link>
               </div>
               <div className="flex items-center">
                 <Link className="flex items-center" href="mailto:hi@pulsemarketing.io" target="_blank">
                 <MdEmail className="text-xl" />
-                <h3 className="poppins-light ml-3 text-md">hi@pulsemarketing.io
+                <h3 className="poppins-light ml-3 text-[14px]">hi@pulsemarketing.io
                 </h3>
                 </Link>
               </div>
@@ -53,17 +53,17 @@ const Footer = () => {
     
         <div className="w-full px-8 lg:px-0 lg:w-[90%] mx-auto md:flex justify-between items-center">
           <div>
-            <h3 className="poppins-light text-[18px] md:text-[14px]">© 2024 Pulse Marketing Inc. All rights reserved.</h3>
+            <h3 className="poppins-light text-[14px]">© 2024 Pulse Marketing Inc. All rights reserved.</h3>
           </div>
           <div className="flex md:flex mt-3 md:mt-0">
             <div className="flex items-center md:border-r-2 pr-6 mr-6">
               <Link href={'https://pulsemarketing.io/privacy'} target="_blank">
-              <h3 className="poppins-light text-[18px] md:text-[14px]">Privacy Policy</h3>
+              <h3 className="poppins-light text-[14px] ">Privacy Policy</h3>
               </Link>
             </div>
             <div className="flex items-center">
               <Link href={'https://pulsemarketing.io/terms-and-conditions/'} target="_blank">
-              <h3 className="poppins-light text-[18px] md:text-[14px]">Terms & Conditions</h3>
+              <h3 className="poppins-light text-[14px] ">Terms & Conditions</h3>
               </Link>
             </div>
           </div>

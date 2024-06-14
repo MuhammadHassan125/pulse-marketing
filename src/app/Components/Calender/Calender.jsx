@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import {Reveal} from '../../utils/Reveal';
+import Link from "next/link";
 const Calender = () => {
     
   useEffect(() => {
@@ -42,17 +43,21 @@ const Calender = () => {
 
             <div className="md:flex ">
               <div className="flex items-center md:justify-between  md:border-r-2 pr-6 mr-6">
+                <Link className="flex items-center" href="tel:18443303141" target="_blank">
                 <FaPhoneAlt />
                 <Reveal>
-                <h3 className="poppins-light ml-3">+1 844 330 3141</h3>
+                <h3 className="poppins-light ml-3">18443303141</h3>
                 </Reveal>
+                </Link>
               </div>
 
               <div className="flex items-center md:justify-between ">
+              <Link className="flex items-center" href="mailto:hi@pulsemarketing.io" target="_blank">
                 <MdEmail className="text-xl" />
                 <Reveal>
                 <h3 className="poppins-light ml-3">hi@pulsemarketing.io</h3>
                 </Reveal>
+                </Link>
               </div>
             </div>
           </div>

@@ -20,6 +20,7 @@ export default function BlogPost({ ogImage }) {
   );
 }
 
+// pages/blog/[slug].opengraph-image.js
 export default async function generateOGImage({ title }) {
   return {
     url: '/og-image.jpg',

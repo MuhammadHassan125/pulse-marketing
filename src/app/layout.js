@@ -14,15 +14,19 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth" style={{ overflowX: "hidden" }}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"
-        ></link>
+        />
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
+          charSet="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -31,13 +35,10 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         <meta property="og:image" content="/og-image.jpg" />
-        <meta property="og:title" content="Sales-Focused Marketing" />
-        <meta
-          property="og:description"
-          content="Our Objective: Increase Your Revenue"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />{" "}
+        <meta property="og:image:alt" content="About Pulse Marketing" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />{" "}
       </head>
 
       <body className={inter.className}>

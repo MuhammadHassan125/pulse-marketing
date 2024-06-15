@@ -166,6 +166,42 @@ body {
   cursor: n-resize;
 }
 
+.card-text{
+  font-size: 15px;
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1248px) {
+  .card-css div {
+    display: block;
+}
+.card-css div h3{
+    font-size:13px
+}
+.card-css {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-css h2 {
+    position: relative;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  .card-text{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .window{
+    margin-top: 15px;
+  }
+  .card-css div h3{
+    font: size 15px;
+}
+}
+
 .header {
   padding: 0px 150px !important;
 }
@@ -306,6 +342,13 @@ body {
 
 
 @media screen and (max-width: 600px) {
+
+  .hero-text{
+    font-size: 30px !important;
+  }
+  .hero-text br{
+      display: none;
+  }
   .header {
     padding: 0 20px !important;
 }
@@ -662,6 +705,11 @@ overflow: hidden;
 .flower-cursor {
     display: none !important;
 }
+
+.ct-padding{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 }
 
 @keyframes scroll {
@@ -674,7 +722,7 @@ overflow: hidden;
 }
 
 .animate-scroll {
-  animation: scroll 60s linear infinite;
+  animation: scroll 150s linear infinite;
 }
 
 

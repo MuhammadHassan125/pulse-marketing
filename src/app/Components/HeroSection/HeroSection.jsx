@@ -49,9 +49,9 @@ export const HeroLeftContent = ({ toggleForm }) => {
         {/* Content Heading  */}
         <div>
           <Reveal>
-            <h1 className="text-[1.5em] md:text-[60px] lg:text-[55px] mt-8 lg:mt-2 poppins-medium leading-[49px] md:leading-[1.3em]">
-              Our Objective
-              <br /> Increase Your Revenue.
+            <h1 className="text-[1.5em] md:text-[60px] lg:text-[55px] mt-8 lg:mt-2 poppins-medium leading-[49px] md:leading-[1.3em] hero-text">
+              Our Objective:
+              <br /> Increase Your <br/>Revenue.
             </h1>
           </Reveal>
 
@@ -245,7 +245,7 @@ export const HeroRightContent = ({ showForm, toggleForm }) => {
 
         <div
           onClick={toggleForm}
-          className="absolute bottom-0 right-0 w-[30%] -translate-y-16 get-btn"
+          className="absolute bottom-0 right-0 w-[30%] -translate-y-[70%]  get-btn"
         >
           <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
             <h3 className="poppins-light text-white text-lg">Get in touch</h3>

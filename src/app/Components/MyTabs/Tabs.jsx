@@ -25,7 +25,7 @@ export default function Tabs() {
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
           {/* ---------  */}
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://studio9p.com/en/" target="_blank">
               <Image
                 src="/animated01.webp"
@@ -38,7 +38,7 @@ export default function Tabs() {
           </div>
           {/* ---------  */}
 
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.armadillo.one/" target="_blank">
               <Image
                 src="/img-tab (1).jpg"
@@ -50,7 +50,7 @@ export default function Tabs() {
             </Link>
           </div>
 
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.bienvillecapital.com/" target="_blank">
               <Image
                 src="/animated03.webp"
@@ -62,7 +62,7 @@ export default function Tabs() {
             </Link>
           </div>
 
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://petertarka.com/" target="_blank">
               <Image
                 src="/animated04.webp"
@@ -74,7 +74,7 @@ export default function Tabs() {
             </Link>
           </div>
 
-          <div className="m-auto cursor-n-resize window"> 
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2"> 
             <Link href="https://nhtiusa.com/" target="_blank">
               <Image
                 src="/img-tab (2).jpg"
@@ -86,7 +86,7 @@ export default function Tabs() {
             </Link>
           </div>
           
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://fuzelogistics.com/en/" target="_blank">
               <Image
                 src="/img-tab (3).jpg"
@@ -104,7 +104,7 @@ export default function Tabs() {
       label: "Hospitality",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://pierreslounge.ca/" target="_blank">
               <Image
                 src="/hospa-01.webp"
@@ -115,7 +115,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://westoakrestaurant.com/" target="_blank">
               <Image
                 src="/hos-02.webp"
@@ -126,7 +126,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://twelvewest.ca/" target="_blank">
               <Image
                 src="/hos-03.webp"
@@ -137,7 +137,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://karmalounge.ca/" target="_blank">
               <Image
                 src="/hos-04.webp"
@@ -148,7 +148,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://inciteinteractive.com/" target="_blank">
               <Image
                 src="/hos-05.png"
@@ -159,7 +159,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://saaqitechdeveloper.com/huka102/" target="_blank">
               <Image
                 src="/hospi-o6.webp"
@@ -177,7 +177,7 @@ export default function Tabs() {
       label: "Contractors",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-           <div className="m-auto cursor-n-resize window">
+           <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://skylinesolutions.ca/" target="_blank">
               <Image
                 src="/cont-01.webp"
@@ -188,7 +188,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://glassfixcanada.com/" target="_blank">
               <Image
                 src="/cont-02.webp"
@@ -199,7 +199,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.bayut.com/" target="_blank">
               <Image
                 src="/cont-03.webp"
@@ -210,7 +210,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://famproperties.com/" target="_blank">
               <Image
                 src="/cont-04.webp"
@@ -221,7 +221,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://senseilms.com/" target="_blank">
               <Image
                 src="/cont-05.webp"
@@ -232,7 +232,7 @@ export default function Tabs() {
               />
             </Link>
           </div> 
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.out-class.org/?gclid=EAIaIQobChMIztjxtvOF_QIVks53Ch0_hAMgEAAYASAAEgJxAfD_BwE" target="_blank">
               <Image
                 src="/cont-06.webp"
@@ -250,7 +250,7 @@ export default function Tabs() {
       label: "E-Commerce",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-           <div className="m-auto cursor-n-resize window">
+           <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://leadapparel.com/" target="_blank">
               <Image
                 src="/e-commerce-01.webp"
@@ -261,7 +261,7 @@ export default function Tabs() {
               />
             </Link>
           </div>   
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://oohlaluxe.com/" target="_blank">
               <Image
                 src="/e-commerce-02.webp"
@@ -272,7 +272,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://fitoru.com/" target="_blank">
               <Image
                 src="/e-commerce-03.webp"
@@ -283,7 +283,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.innogear.com/" target="_blank">
               <Image
                 src="/e-commerce-04.webp"
@@ -294,7 +294,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.dreamlandjewelry.com/" target="_blank">
               <Image
                 src="/e-commerce-05.webp"
@@ -304,7 +304,7 @@ export default function Tabs() {
                 height={400}
               />
             </Link>
-          </div>   <div className="m-auto cursor-n-resize window">
+          </div>   <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://bymilaner.com/" target="_blank">
               <Image
                 src="/e-commerce-06.webp"
@@ -322,7 +322,7 @@ export default function Tabs() {
       label: "Services",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-           <div className="m-auto cursor-n-resize window">
+           <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://absolutedental.com.au/" target="_blank">
               <Image
                 src="/service-01.webp"
@@ -333,7 +333,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://aphroditehairstudio.ca/" target="_blank">
               <Image
                 src="/service-02.webp"
@@ -344,7 +344,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://bettertax.org/" target="_blank">
               <Image
                 src="/service-03.webp"
@@ -355,7 +355,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://cactuslandscaping.ca/" target="_blank">
               <Image
                 src="/service-04.webp"
@@ -366,7 +366,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://dulexpropainting.ca/" target="_blank">
               <Image
                 src="/service-05.webp"
@@ -376,7 +376,7 @@ export default function Tabs() {
                 height={400}
               />
             </Link>
-          </div>   <div className="m-auto cursor-n-resize window">
+          </div>   <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://fuzelogistics.com/en/" target="_blank">
               <Image
                 src="/service-06.webp"
@@ -394,7 +394,7 @@ export default function Tabs() {
       label: "Landing Pages",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-             <div className="m-auto cursor-n-resize window">
+             <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://collectivegen.com/" target="_blank">
               <Image
                 src="/landingpage-01.webp"
@@ -405,7 +405,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://corporette.com/" target="_blank">
               <Image
                 src="/landingpage-02.webp"
@@ -416,7 +416,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://kayandtee.ca/" target="_blank">
               <Image
                 src="/landingpage-03.webp"
@@ -427,7 +427,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://saaqitechdeveloper.com/brennannevadainc-final/" target="_blank">
               <Image
                 src="/landing-04.png"
@@ -438,7 +438,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://saaqitechdeveloper.com/cowboyjerky/" target="_blank">
               <Image
                 src="/landingpage-05.webp"
@@ -449,7 +449,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://theposhpicnicatx.com/" target="_blank">
               <Image
                 src="/landingpage-06.webp"
@@ -467,7 +467,7 @@ export default function Tabs() {
       label: "Real Estate",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://bscottrealtydmv.com/" target="_blank">
           <Image
             src="/real-01.webp"
@@ -478,7 +478,7 @@ export default function Tabs() {
           />
         </Link>
       </div>
-      <div className="m-auto cursor-n-resize window">
+      <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://idealagent.com/" target="_blank">
               <Image
                 src="/real-02.webp"
@@ -489,7 +489,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.knightfrank.ae/" target="_blank">
               <Image
                 src="/real-03.webp"
@@ -500,7 +500,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://saaqitechdeveloper.com/arcatec-101/" target="_blank">
               <Image
                 src="/real-04.webp"
@@ -511,7 +511,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.hiltonhyland.com/" target="_blank">
               <Image
                 src="/real-05.webp"
@@ -522,7 +522,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://saaqitechdeveloper.com/hellix1020/" target="_blank">
               <Image
                 src="/real-06.webp"
@@ -540,7 +540,7 @@ export default function Tabs() {
       label: "Dispensaries",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://www.6pak.ca/" target="_blank">
           <Image
             src="/disp01.webp"
@@ -551,7 +551,7 @@ export default function Tabs() {
           />
         </Link>
       </div>
-      <div className="m-auto cursor-n-resize window">
+      <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://www.atgpharma.com/" target="_blank">
           <Image
             src="/disp02.webp"
@@ -562,7 +562,7 @@ export default function Tabs() {
           />
         </Link>
       </div>
-      <div className="m-auto cursor-n-resize window">
+      <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://ignite.co/" target="_blank">
           <Image
             src="/disp03.webp"
@@ -573,7 +573,7 @@ export default function Tabs() {
           />
         </Link>
       </div>
-      <div className="m-auto cursor-n-resize window">
+      <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://cannapiece.ca/" target="_blank">
           <Image
             src="/disp04.webp"
@@ -584,7 +584,7 @@ export default function Tabs() {
           />
         </Link>
       </div>   
-      <div className="m-auto cursor-n-resize window">
+      <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://ccg-corp.ca/" target="_blank">
           <Image
             src="/disp05.webp"
@@ -595,7 +595,7 @@ export default function Tabs() {
           />
         </Link>
       </div>
-      <div className="m-auto cursor-n-resize window">
+      <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
         <Link href="https://gvwellness.ca/" target="_blank">
           <Image
             src="/disp06.webp"
@@ -613,7 +613,7 @@ export default function Tabs() {
       label: "TurnKey Sites",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-             <div className="m-auto cursor-n-resize window">
+             <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://ww.bearplex.com/" target="_blank">
               <Image
                 src="/turnkey-site-1.webp"
@@ -624,7 +624,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://evolvere.co/" target="_blank">
               <Image
                 src="/turnkey-site02.webp"
@@ -635,7 +635,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://meotech.io/" target="_blank">
               <Image
                 src="/turnkey-site03.webp"
@@ -646,7 +646,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://setosaskin.pk/" target="_blank">
               <Image
                 src="/turnkey-site04.webp"
@@ -656,7 +656,7 @@ export default function Tabs() {
                 height={400}
               />
             </Link>
-          </div>   <div className="m-auto cursor-n-resize window">
+          </div>   <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://gvwellness.ca/" target="_blank">
               <Image
                 src="/turnkey-site05.webp"
@@ -667,7 +667,7 @@ export default function Tabs() {
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize window">
+          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
             <Link href="https://www.skipp.dev/home" target="_blank">
               <Image
                 src="/turnkey-site06.webp"

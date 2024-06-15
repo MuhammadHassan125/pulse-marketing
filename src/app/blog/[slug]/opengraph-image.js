@@ -9,7 +9,6 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ ogImage }) {
   return (
     <div>
-      {/* ... */}
       <Head>
         <meta property="og:image" content={'/og-image.jpg'} />
         <meta property="og:image:width" content={ogImage.width} />

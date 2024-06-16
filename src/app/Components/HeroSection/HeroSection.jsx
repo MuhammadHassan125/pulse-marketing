@@ -6,19 +6,14 @@ import { MdArrowForward } from "react-icons/md";
 import { Reveal } from "../../utils/Reveal";
 import Link from "next/link";
 
-export const HeroLeftContent = ({ toggleForm }) => {
+const HeroLeftContent = ({ toggleForm, showForm }) => {
   return (
     <>
       <main className="w-full mt-16 lg:mt-0 px-5 hre-section">
         {/* upper logos container*/}
         <div className="flex">
           <Reveal>
-            <Link
-              href={
-                "https://www.bbb.org/ca/bc/vancouver/profile/digital-marketing/pulse-marketing-inc-0037-2428735/#sealclick"
-              }
-              target="_blank"
-            >
+            <Link href={'https://www.bbb.org/ca/bc/vancouver/profile/digital-marketing/pulse-marketing-inc-0037-2428735/#sealclick'} target="_blank">
               <Image
                 alt="image"
                 className="mr-8"
@@ -28,7 +23,6 @@ export const HeroLeftContent = ({ toggleForm }) => {
               />
             </Link>
           </Reveal>
-
           <Reveal>
             <Link
               href={
@@ -45,16 +39,13 @@ export const HeroLeftContent = ({ toggleForm }) => {
             </Link>
           </Reveal>
         </div>
-
         {/* Content Heading  */}
         <div>
           <Reveal>
-            <h1 className="text-[1.5em] md:text-[60px] lg:text-[55px] mt-8 lg:mt-2 poppins-medium leading-[49px] md:leading-[1.3em] hero-text">
-              Our Objective:
-              <br /> Increase Your <br/>Revenue.
+            <h1 className="text-[1.5em] md:text-[60px] lg:text-[60px]  mt-8 poppins-medium leading-[49px] md:leading-[1.3em]">
+              Our Objective:<br /> Increase Your <br /> Revenue.
             </h1>
           </Reveal>
-
           <div className="w-[90%] border-l-2 my-4 pl-3">
             <Reveal>
               <p className="poppins-light">
@@ -64,26 +55,37 @@ export const HeroLeftContent = ({ toggleForm }) => {
             </Reveal>
           </div>
         </div>
-
         {/* Contact Us button  */}
         <Reveal>
-          <div onClick={toggleForm}>
-            <button
-              className="bg-white hidden border border-main shadow-lg hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl md:flex justify-between items-center border-none outline-none contact-btn"
-            >
-              Book Now
-              <div className="bg-[#6EE3D7] p-[2px] ml-2 h-full rounded-full">
-                <MdArrowForward />
-              </div>
-            </button>
-          </div>
+          <button
+            onClick={toggleForm}
+            className="bg-white hover:bg-my-blue-gradient hover:text-white hover:transition-all ease-in-out poppins-regular text-black py-2 px-4 mt-8 rounded-3xl flex justify-between items-center border-none outline-none contact-btn">
+            Book Now
+            <div className="bg-[#6EE3D7] p-[2px] ml-2 h-full rounded-full">
+              <MdArrowForward />
+            </div>
+          </button>
         </Reveal>
-
         <div className="md:hidden">
+          {showForm && (
+            <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
+              <div className="w-full inset-0 flex justify-center items-center">
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
+                  style={{
+                    width: "80%",
+                    height: "80%",
+                    border: "none",
+                    borderRadius: "3px",
+                  }}
+                  title="BookingFormWithWebsite"
+                ></iframe>
+              </div>
+            </div>
+          )}
           <div
             onClick={toggleForm}
-            className="absolute bottom-0 right-0 w-[40%] md:w-[30%]-translate-y-16"
-          >
+            className="absolute bottom-0 right-0 w-[30%] -translate-y-16">
             <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3 flex items-center justify-end get-mv-btbn">
               <h3 className="poppins-light text-white text-lg">Get in touch</h3>
             </div>
@@ -94,9 +96,7 @@ export const HeroLeftContent = ({ toggleForm }) => {
   );
 };
 
-export const HeroRightContent = ({ showForm, toggleForm }) => {
-  const firstImageUrl = "/web banner-01.png";
-
+const HeroRightContent = ({ showForm, toggleForm }) => {
   return (
     <>
       <div className="h-[120vh]">
@@ -113,37 +113,31 @@ export const HeroRightContent = ({ showForm, toggleForm }) => {
                   <div className="fill-dimensions cover-img first-banner-img2"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img first-banner-img3"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img first-banner-img4"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img first-banner-img5"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img first-banner-img6"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img first-banner-img7"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img first-banner-img8"></div>
@@ -152,7 +146,6 @@ export const HeroRightContent = ({ showForm, toggleForm }) => {
             </div>
           </div>
         </div>
-
         <div className="block-33 display--inline-top">
           <div className="gutter relative">
             <div className="gallery-h gallery-h--tb">
@@ -187,7 +180,6 @@ export const HeroRightContent = ({ showForm, toggleForm }) => {
             </div>
           </div>
         </div>
-
         <div className="block-33 display--inline-top">
           <div className="gutter relative">
             <div className="gallery-h">
@@ -216,7 +208,6 @@ export const HeroRightContent = ({ showForm, toggleForm }) => {
                   <div className="fill-dimensions cover-img third-banner-img4"></div>
                 </div>
               </div>
-
               <div className="gallery-image">
                 <div className="gallery-image__img relative">
                   <div className="fill-dimensions cover-img third-banner-img5"></div>
@@ -271,80 +262,62 @@ const HeroSection = () => {
 
           <Header />
 
-          <div className="my-20 lg:my-0 flex flex-row items-center w-[100%] lg:w-[50%]">
+          <div className="my-20 lg:my-0 flex flex-row  items-center w-[100%] lg:w-[50%]">
             {/* social icon component  */}
             <div className="w-[8%] flex flex-col gap-1 justify-center translate-x-0 social-logos">
-              <Link
-                href={"https://www.facebook.com/pulsemarketing.io/"}
-                target="_blank"
-              >
-                <div
-                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out
-               hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0"
-                >
-                  <Image
-                    src={"/Facebook.png"}
-                    alt="facebook"
-                    width={8}
-                    height={8}
-                  />
-                </div>
-              </Link>
+              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out
+               hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0">
+                <Image
+                  src={"/Facebook.png"}
+                  alt="facebook"
+                  width={8}
+                  height={8}
+                />
+              </div>
 
-              <Link
-                href={"https://www.instagram.com/pulsemarketing.io/"}
-                target="_blank"
-              >
-                <div
-                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
-               rounded-full flex items-center justify-center py-3"
-                >
-                  <Image
-                    src={"/Subtract.png"}
-                    alt="subtract"
-                    width={12}
-                    height={12}
-                  />
-                </div>
-              </Link>
+              <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer 
+               rounded-full flex items-center justify-center py-3">
+                <Image
+                  src={"/Subtract.png"}
+                  alt="subtract"
+                  width={12}
+                  height={12}
+                />
+              </div>
 
-              <Link
-                href={"https://www.linkedin.com/company/pulse-marketing-inc/"}
-                target="_blank"
-              >
-                <div
-                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
-              rounded-full flex items-center justify-center py-3"
-                >
-                  <Image
-                    src={"/Linkedin.png"}
-                    alt="linkedin"
-                    width={12}
-                    height={12}
-                  />
-                </div>
-              </Link>
+              <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
+              rounded-full flex items-center justify-center py-3">
+                <Image
+                  alt="image"
+                  src={"/Vector (1).png"}
+                  width={12}
+                  height={12}
+                />
+              </div>
 
-              <Link
-                href={"https://www.youtube.com/watch?v=mEhNo-fnGxU"}
-                target="_blank"
-              >
-                <div
-                  className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer
-               rounded-full flex items-center justify-center py-[14px]"
-                >
-                  <Image
-                    src={"/Youtube.png"}
-                    alt="youtube"
-                    width={12}
-                    height={12}
-                  />
-                </div>
-              </Link>
+              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer 
+              rounded-full flex items-center justify-center py-3">
+                <Image
+                  src={"/Linkedin.png"}
+                  alt="linkedin"
+                  width={12}
+                  height={12}
+                />
+              </div>
+
+              <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer
+               rounded-full flex items-center justify-center py-[14px]">
+                <Image
+                  src={"/Youtube.png"}
+                  alt="youtube"
+                  width={12}
+                  height={12}
+                />
+              </div>
             </div>
 
             <div>
-              <HeroLeftContent toggleForm={toggleForm} />
+              <HeroLeftContent toggleForm={toggleForm} showForm={showForm} />
             </div>
           </div>
 

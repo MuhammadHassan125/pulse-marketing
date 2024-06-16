@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <meta property="og:image" content="/og-image.jpg" />
+        <meta property="og:image" content="/og-image2.jpg" />
         <meta property="og:image:alt" content="About Pulse Marketing" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1200" />

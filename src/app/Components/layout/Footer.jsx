@@ -47,7 +47,8 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center W-[100%] justify-center poppins-medium text-[4rem] lg:text-[100px] text-center overflow-hidden whitespace-nowrap text-transparent border-text w-full py-0 lg:py-2">
-         <TextScroller text="Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!  Join the Revolution in Marketing!"/>
+         <TextScroller text="Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!
+          Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights! Innovate. Create. Succeed: Your Journey Begins Here! Drive Your Business to New Heights!"/>
         </div>
 
     

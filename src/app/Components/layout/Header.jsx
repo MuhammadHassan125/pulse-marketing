@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import { IoIosMail } from "react-icons/io";
+import Logo from '../../../../public/pulse logo..svg'
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
               <Link href={'/'}>
                 <Image
                 alt="logo"
-                src={"/logo.png"} 
+                src={Logo} 
                 width={150}
                 height={150}
                 />

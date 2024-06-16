@@ -25,75 +25,75 @@ export default function Tabs() {
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
           {/* ---------  */}
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://studio9p.com/en/" target="_blank">
               <Image
                 src="/animated01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={100}
-                height={100}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
           {/* ---------  */}
 
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://www.armadillo.one/" target="_blank">
               <Image
                 src="/img-tab (1).jpg"
                 alt="Image 1"
-                className="image w-full h-auto rounded object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={100}
-                height={100}
+                className="image w-auto h-auto rounded object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
+                width={500}
+                height={500}
               />
             </Link>
           </div>
 
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://www.bienvillecapital.com/" target="_blank">
               <Image
                 src="/animated03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
 
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://petertarka.com/" target="_blank">
               <Image
                 src="/animated04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
 
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2"> 
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2"> 
             <Link href="https://nhtiusa.com/" target="_blank">
               <Image
                 src="/img-tab (2).jpg"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
           
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://fuzelogistics.com/en/" target="_blank">
               <Image
                 src="/img-tab (3).jpg"
                 alt="Image 1"
                 className="image w-full h-auto rounded  object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
         </div>
@@ -110,63 +110,64 @@ export default function Tabs() {
                 src="/hospa-01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto  window mt-2">
             <Link href="https://westoakrestaurant.com/" target="_blank">
               <Image
                 src="/hos-02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://twelvewest.ca/" target="_blank">
               <Image
                 src="/hos-03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+
+          <div className="m-auto cursor-n-resize windowm-auto  window mt-2">
             <Link href="https://karmalounge.ca/" target="_blank">
               <Image
                 src="/hos-04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://inciteinteractive.com/" target="_blank">
               <Image
                 src="/hos-05.png"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
-          <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
+          <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://saaqitechdeveloper.com/huka102/" target="_blank">
               <Image
                 src="/hospi-o6.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -183,8 +184,8 @@ export default function Tabs() {
                 src="/cont-01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -194,8 +195,8 @@ export default function Tabs() {
                 src="/cont-02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -205,8 +206,8 @@ export default function Tabs() {
                 src="/cont-03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -216,8 +217,8 @@ export default function Tabs() {
                 src="/cont-04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -227,8 +228,8 @@ export default function Tabs() {
                 src="/cont-05.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div> 
@@ -238,8 +239,8 @@ export default function Tabs() {
                 src="/cont-06.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -256,8 +257,8 @@ export default function Tabs() {
                 src="/e-commerce-01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>   
@@ -267,8 +268,8 @@ export default function Tabs() {
                 src="/e-commerce-02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -278,8 +279,8 @@ export default function Tabs() {
                 src="/e-commerce-03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -289,8 +290,8 @@ export default function Tabs() {
                 src="/e-commerce-04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -300,8 +301,8 @@ export default function Tabs() {
                 src="/e-commerce-05.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>   <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
@@ -310,8 +311,8 @@ export default function Tabs() {
                 src="/e-commerce-06.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -328,8 +329,8 @@ export default function Tabs() {
                 src="/service-01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -339,8 +340,8 @@ export default function Tabs() {
                 src="/service-02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -350,8 +351,8 @@ export default function Tabs() {
                 src="/service-03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -361,8 +362,8 @@ export default function Tabs() {
                 src="/service-04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -372,8 +373,8 @@ export default function Tabs() {
                 src="/service-05.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>   <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
@@ -382,8 +383,8 @@ export default function Tabs() {
                 src="/service-06.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -400,8 +401,8 @@ export default function Tabs() {
                 src="/landingpage-01.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -411,8 +412,8 @@ export default function Tabs() {
                 src="/landingpage-02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -422,8 +423,8 @@ export default function Tabs() {
                 src="/landingpage-03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -433,8 +434,8 @@ export default function Tabs() {
                 src="/landing-04.png"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -444,8 +445,8 @@ export default function Tabs() {
                 src="/landingpage-05.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -455,8 +456,8 @@ export default function Tabs() {
                 src="/landingpage-06.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -473,8 +474,8 @@ export default function Tabs() {
             src="/real-01.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>
@@ -484,8 +485,8 @@ export default function Tabs() {
                 src="/real-02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -495,8 +496,8 @@ export default function Tabs() {
                 src="/real-03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -506,8 +507,8 @@ export default function Tabs() {
                 src="/real-04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -517,8 +518,8 @@ export default function Tabs() {
                 src="/real-05.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -528,8 +529,8 @@ export default function Tabs() {
                 src="/real-06.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -546,8 +547,8 @@ export default function Tabs() {
             src="/disp01.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>
@@ -557,8 +558,8 @@ export default function Tabs() {
             src="/disp02.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>
@@ -568,8 +569,8 @@ export default function Tabs() {
             src="/disp03.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>
@@ -579,8 +580,8 @@ export default function Tabs() {
             src="/disp04.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>   
@@ -590,8 +591,8 @@ export default function Tabs() {
             src="/disp05.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>
@@ -601,8 +602,8 @@ export default function Tabs() {
             src="/disp06.webp"
             alt="Image 1"
             className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-            width={180}
-            height={400}
+            width={500}
+            height={500}
           />
         </Link>
       </div>
@@ -619,8 +620,8 @@ export default function Tabs() {
                 src="/turnkey-site-1.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -630,8 +631,8 @@ export default function Tabs() {
                 src="/turnkey-site02.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -641,8 +642,8 @@ export default function Tabs() {
                 src="/turnkey-site03.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -652,8 +653,8 @@ export default function Tabs() {
                 src="/turnkey-site04.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>   <div className="m-auto cursor-n-resize windowm-auto cursor-n-resize window mt-2">
@@ -662,8 +663,8 @@ export default function Tabs() {
                 src="/turnkey-site05.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -673,8 +674,8 @@ export default function Tabs() {
                 src="/turnkey-site06.webp"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
-                width={180}
-                height={400}
+                width={500}
+                height={500}
               />
             </Link>
           </div>
@@ -690,8 +691,8 @@ export default function Tabs() {
               src="/ap-01.webp"
               alt="Image 1"
               className="w-full h-auto rounded  hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300"
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
           <Link href="https://www.clouarchitects.com/" target="_blank">
@@ -699,8 +700,8 @@ export default function Tabs() {
               src="/ap-02.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
           <Link href="https://www.clouarchitects.com/" target="_blank">
@@ -708,8 +709,8 @@ export default function Tabs() {
               src="/ap-03.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
           <Link href="https://www.clouarchitects.com/" target="_blank">
@@ -717,8 +718,8 @@ export default function Tabs() {
               src="/ap-04.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
           <Link href="https://www.clouarchitects.com/" target="_blank">
@@ -726,8 +727,8 @@ export default function Tabs() {
               src="/ap-05.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
           <Link href="https://www.clouarchitects.com/" target="_blank">
@@ -735,8 +736,8 @@ export default function Tabs() {
               src="/ap-06.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
 
@@ -745,8 +746,8 @@ export default function Tabs() {
               src="/ap-07.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
           
@@ -755,8 +756,8 @@ export default function Tabs() {
               src="/ap-08.webp"
               alt="Image 2"
               className="w-full h-auto rounded hover:scale-200 hover:cursor-pointer hover:shadow-glow transform transition-transform duration-300 "
-              width={180}
-              height={400}
+              width={500}
+              height={500}
             />
           </Link>
 

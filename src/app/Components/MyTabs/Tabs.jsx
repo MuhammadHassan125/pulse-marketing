@@ -65,7 +65,7 @@ export default function Tabs() {
           <div className="m-auto cursor-n-resize windowm-auto window mt-2">
             <Link href="https://petertarka.com/" target="_blank">
               <Image
-                src="/animated04.webp"
+                src="/steelwave-image.png"
                 alt="Image 1"
                 className="image w-full h-auto rounded object-cover object-top transition-transform duration-8 hover:cursor-pointer hover:shadow-glow transform ease"
                 width={500}

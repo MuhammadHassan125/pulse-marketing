@@ -5,6 +5,7 @@ import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 import { Reveal } from "../../utils/Reveal";
 import Link from "next/link";
+import { RiCloseLargeFill } from "react-icons/ri";
 
 const HeroLeftContent = ({ toggleForm, showForm }) => {
   return (
@@ -67,30 +68,35 @@ const HeroLeftContent = ({ toggleForm, showForm }) => {
           </button>
         </Reveal>
         <div className="md:hidden">
-          {showForm && (
-            <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
-              <div className="w-full inset-0 flex justify-center items-center">
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-                  style={{
-                    width: "80%",
-                    height: "80%",
-                    border: "none",
-                    borderRadius: "3px",
-                  }}
-                  title="BookingFormWithWebsite"
-                ></iframe>
-              </div>
-            </div>
-          )}
-          <div
-            onClick={toggleForm}
-            className="absolute bottom-0 right-0 w-[30%] -translate-y-16">
-            <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3 flex items-center justify-end get-mv-btbn">
-              <h3 className="poppins-light text-white text-lg">Get in touch</h3>
-            </div>
+      {showForm && (
+        <>
+        <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
+          
+          <div className="relative w-full inset-0 flex justify-center items-center">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
+              style={{
+                width: "80%",
+                height: "80%",
+                border: "none",
+                borderRadius: "3px",
+              }}
+              title="BookingFormWithWebsite"
+            ></iframe>
           </div>
         </div>
+              </>
+      )}
+      
+      <div
+        onClick={toggleForm}
+        className="absolute bottom-0 right-0 w-[30%] -translate-y-16"
+      >
+        <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3 flex items-center justify-end get-mv-btbn">
+          <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+        </div>
+      </div>
+    </div>
       </main>
     </>
   );
@@ -265,6 +271,10 @@ const HeroSection = () => {
           <div className="my-20 lg:my-0 flex flex-row  items-center w-[100%] lg:w-[50%]">
             {/* social icon component  */}
             <div className="w-[8%] flex flex-col gap-1 justify-center translate-x-0 social-logos">
+              <Link 
+              href={"https://www.facebook.com/pulsemarketing.io/"}
+              target="_blank"
+              >
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out
                hover:cursor-pointer rounded-full flex items-center justify-center py-3 px-0">
                 <Image
@@ -272,9 +282,14 @@ const HeroSection = () => {
                   alt="facebook"
                   width={8}
                   height={8}
-                />
+                  />
               </div>
+                  </Link>
 
+            <Link 
+            href={"https://www.instagram.com/pulse_marketing/"}
+            target="_blank"
+            >
               <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer 
                rounded-full flex items-center justify-center py-3">
                 <Image
@@ -282,19 +297,16 @@ const HeroSection = () => {
                   alt="subtract"
                   width={12}
                   height={12}
-                />
+                  />
               </div>
+              
+                  </Link>
 
-              <div className="hover:bg-blue-400 hover:duration-100 hover:ease-in-out hover:cursor-pointer 
-              rounded-full flex items-center justify-center py-3">
-                <Image
-                  alt="image"
-                  src={"/Vector (1).png"}
-                  width={12}
-                  height={12}
-                />
-              </div>
-
+              
+            <Link 
+            href={'https://www.linkedin.com/company/pulse-marketing-team/'}
+            target="_blank"
+            >
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer 
               rounded-full flex items-center justify-center py-3">
                 <Image
@@ -302,9 +314,14 @@ const HeroSection = () => {
                   alt="linkedin"
                   width={12}
                   height={12}
-                />
+                  />
               </div>
+                  </Link>
 
+            <Link 
+            href={'https://www.youtube.com/watch?v=mEhNo-fnGxU'}
+            target="_blank"
+            >
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer
                rounded-full flex items-center justify-center py-[14px]">
                 <Image
@@ -312,8 +329,9 @@ const HeroSection = () => {
                   alt="youtube"
                   width={12}
                   height={12}
-                />
+                  />
               </div>
+                  </Link>
             </div>
 
             <div>

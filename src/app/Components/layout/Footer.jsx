@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Slider from "react-slick";
+import logo from '../../../../public/pulse logo..svg'
 import TextScroller from "./TextScroller";
 import Link from "next/link";
 
@@ -23,7 +23,11 @@ const Footer = () => {
       <main className="w-full pb-12 ">
         <div className="w-full px-8 lg:px-0 lg:w-[90%] mx-auto md:flex justify-between items-center">
           <div>
-            <Image src={"/logo.png"} width={150} height={150} alt="Logo" />
+            <Image 
+            src={logo} 
+            width={150} 
+            height={150}
+             alt="Logo" />
           </div>
 
           <div>

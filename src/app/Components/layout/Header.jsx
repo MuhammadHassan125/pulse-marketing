@@ -22,7 +22,7 @@ const Header = () => {
             </div>
 
             {/* right side mail box  */}
-            <div className='bg-[#50A2D4] my-3 md:my-0 text-white hover:transition-all hover:duration-600 hover:ease-in-out hover:bg-white hover:text-[#62c9d6] flex justify-center items-center px-5 py-2 cursor-pointer rounded-3xl'>
+            <div className='bg-[#50A2D4] my-3 md:my-0 text-white hover:transition-all hover:duration-600 hover:ease-in-out hover:bg-white hover:text-[#62c9d6] flex justify-center items-center py-1 px-3 md:px-5 md:py-2 cursor-pointer rounded-3xl'>
                 <IoIosMail 
                 className='text-xl mr-1'
                 />

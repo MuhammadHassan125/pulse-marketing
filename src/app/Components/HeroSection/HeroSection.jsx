@@ -70,9 +70,17 @@ const HeroLeftContent = ({ toggleForm, showForm }) => {
         <div className="md:hidden">
       {showForm && (
         <>
-        <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[80%] -translate-y-[65px] absolute bottom-0 right-0">
+        <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[58%] w-[70%] -translate-y-[80px] absolute bottom-0 right-0">
           
           <div className="relative w-full inset-0 flex justify-center items-center">
+          <button
+              onClick={toggleForm}
+              className="absolute top-2 right-2 text-white text-lg bg-my-blue-gradient"
+            >
+              {/* &times; */}
+              <IoMdClose />
+
+            </button>
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
               style={{
@@ -342,7 +350,7 @@ const HeroSection = () => {
                   </Link>
             </div>
 
-            <div className="mt-20">
+            <div className="md:mt-20">
               <HeroLeftContent toggleForm={toggleForm} showForm={showForm} />
             </div>
           </div>

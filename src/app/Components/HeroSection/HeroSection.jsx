@@ -303,7 +303,7 @@ const HeroSection = () => {
                   </Link>
 
             <Link 
-            href={"https://www.instagram.com/pulse_marketing/"}
+            href={"https://www.instagram.com/pulsemarketing.io"}
             target="_blank"
             >
               <div className="hover:bg-blue-400 hover:duration-100  hover:ease-in-out hover:cursor-pointer 
@@ -320,7 +320,7 @@ const HeroSection = () => {
 
               
             <Link 
-            href={'https://www.linkedin.com/company/pulse-marketing-team/'}
+            href={'https://www.linkedin.com/company/29302818/admin/feed/posts/'}
             target="_blank"
             >
               <div className="hover:bg-blue-400  hover:duration-100 hover:ease-in-out hover:cursor-pointer 

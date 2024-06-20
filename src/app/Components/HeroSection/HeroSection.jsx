@@ -5,7 +5,7 @@ import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 import { Reveal } from "../../utils/Reveal";
 import Link from "next/link";
-import { RiCloseLargeFill } from "react-icons/ri";
+import { IoMdClose } from "react-icons/io";
 
 const HeroLeftContent = ({ toggleForm, showForm }) => {
   return (
@@ -105,7 +105,7 @@ const HeroLeftContent = ({ toggleForm, showForm }) => {
 const HeroRightContent = ({ showForm, toggleForm }) => {
   return (
     <>
-      <div className="h-[120vh]">
+      <div className="h-[100vh]">
         <div className="block-33 display--inline-top">
           <div className="gutter relative">
             <div className="gallery-h">
@@ -224,30 +224,38 @@ const HeroRightContent = ({ showForm, toggleForm }) => {
         </div>
 
         {showForm && (
-          <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[60%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
-            <div className="w-full inset-0 flex justify-center items-center">
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-                style={{
-                  width: "80%",
-                  height: "80%",
-                  border: "none",
-                  borderRadius: "3px",
-                }}
-                title="BookingFormWithWebsite"
-              ></iframe>
-            </div>
-          </div>
-        )}
+        <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[70%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
+          <div className="w-full inset-0 flex justify-center items-center relative">
+            <button
+              onClick={toggleForm}
+              className="absolute top-2 right-2 text-white text-lg bg-my-blue-gradient"
+            >
+              {/* &times; */}
+              <IoMdClose />
 
-        <div
-          onClick={toggleForm}
-          className="absolute bottom-0 right-0 w-[30%] -translate-y-[70%]  get-btn"
-        >
-          <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
-            <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+            </button>
+            <iframe 
+              src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
+              style={{
+                width: "80%",
+                height: "80%",
+                border: "none",
+                borderRadius: "3px",
+              }}
+              title="BookingFormWithWebsite"
+            ></iframe>
           </div>
         </div>
+      )}
+
+      <div
+        onClick={toggleForm}
+        className="absolute bottom-0 right-0 w-[30%] -translate-y-[70%] get-btn"
+      >
+        <div className="bg-[#50A2D4] px-6 rounded-tl-[40px] py-3">
+          <h3 className="poppins-light text-white text-lg">Get in touch</h3>
+        </div>
+      </div>
       </div>
     </>
   );
@@ -262,7 +270,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <main className="w-full lg:w-full m-auto relative">
+      <main className="w-full lg:w-full lg:h-[100vh] m-auto relative">
         <div className="flex flex-row relative w-[100%] justify-between ">
           {/* my header component  */}
 
@@ -334,12 +342,12 @@ const HeroSection = () => {
                   </Link>
             </div>
 
-            <div>
+            <div className="mt-20">
               <HeroLeftContent toggleForm={toggleForm} showForm={showForm} />
             </div>
           </div>
 
-          <div className="w-[50%] overflow-y-hidden hidden lg:block">
+          <div className="w-[50%] md:h-[100vh] overflow-y-hidden hidden lg:block">
             <HeroRightContent showForm={showForm} toggleForm={toggleForm} />
           </div>
         </div>

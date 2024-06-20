@@ -84,7 +84,7 @@ const HeroLeftContent = ({ toggleForm, showForm }) => {
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
               style={{
-                width: "80%",
+                width: "100%",
                 height: "80%",
                 border: "none",
                 borderRadius: "3px",

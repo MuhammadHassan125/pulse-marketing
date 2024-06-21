@@ -40,7 +40,7 @@ const WebsiteAuditForm = () => {
             borderRadius: "10px",
             margin: "0 auto",
             width: isSmallScreen ? "80%" : "40%",
-            height: isSmallScreen ? "80%" : "70%",
+            height: "70%",
             bgcolor: "background.paper",
             boxShadow: 24,
             transform: "translateY(25%)",

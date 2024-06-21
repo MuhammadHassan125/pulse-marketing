@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Header from "../layout/Header";
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
@@ -8,6 +8,33 @@ import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 
 const HeroLeftContent = ({ toggleForm, showForm }) => {
+
+  const calendlyContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (showForm) {
+      const container = calendlyContainerRef.current;
+
+      if (container) {
+        // Clear the container to ensure a fresh Calendly widget is loaded each time
+        container.innerHTML = "";
+
+        const div = document.createElement("div");
+        div.className = "calendly-inline-widget";
+        div.dataset.url = "https://calendly.com/ianpslater/20min";
+        div.style.minWidth = "150px";
+        div.style.height = "1200px";
+        container.appendChild(div);
+
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        container.appendChild(script);
+      }
+    }
+  }, [showForm]);
+
   return (
     <>
       <main className="w-full mt-16 lg:mt-0 px-5 hre-section">
@@ -75,22 +102,14 @@ const HeroLeftContent = ({ toggleForm, showForm }) => {
           <div className="relative w-full inset-0 flex justify-center items-center">
           <button
               onClick={toggleForm}
-              className="absolute top-2 right-2 text-white text-lg bg-my-blue-gradient"
+              className="absolute z-30 top-2 right-2 text-white text-lg bg-my-blue-gradient"
             >
               {/* &times; */}
               <IoMdClose />
 
             </button>
-            <iframe
-              src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-              style={{
-                width: "100%",
-                height: "80%",
-                border: "none",
-                borderRadius: "3px",
-              }}
-              title="BookingFormWithWebsite"
-            ></iframe>
+            <div ref={calendlyContainerRef}></div>
+
           </div>
         </div>
               </>
@@ -111,6 +130,33 @@ const HeroLeftContent = ({ toggleForm, showForm }) => {
 };
 
 const HeroRightContent = ({ showForm, toggleForm }) => {
+
+  const calendlyContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (showForm) {
+      const container = calendlyContainerRef.current;
+
+      if (container) {
+        // Clear the container to ensure a fresh Calendly widget is loaded each time
+        container.innerHTML = "";
+
+        const div = document.createElement("div");
+        div.className = "calendly-inline-widget";
+        div.dataset.url = "https://calendly.com/ianpslater/20min";
+        div.style.minWidth = "500px";
+        div.style.height = "1200px";
+        container.appendChild(div);
+
+        const script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        container.appendChild(script);
+      }
+    }
+  }, [showForm]);
+  
   return (
     <>
       <div className="h-[100vh]">
@@ -231,30 +277,21 @@ const HeroRightContent = ({ showForm, toggleForm }) => {
           </div>
         </div>
 
-        {showForm && (
-        <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[70%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
-          <div className="w-full inset-0 flex justify-center items-center relative">
-            <button
-              onClick={toggleForm}
-              className="absolute top-2 right-2 text-white text-lg bg-my-blue-gradient"
-            >
-              {/* &times; */}
-              <IoMdClose />
+     {showForm && (
+  <div className="bg-white rounded-lg overflow-x-hidden overflow-y-scroll h-[70%] w-[30%] -translate-y-20 absolute bottom-0 right-0">
+    <div className="w-full inset-0 flex justify-center items-center relative">
+      <button
+        onClick={toggleForm}
+        className="absolute top-2 right-2 text-white text-lg bg-my-blue-gradient z-20"
+      >
+        {/* &times; */}
+        <IoMdClose />
+      </button>
+      <div ref={calendlyContainerRef}></div>
 
-            </button>
-            <iframe 
-              src="https://api.leadconnectorhq.com/widget/form/g60hp5MgZ6QhOlBTdRFX"
-              style={{
-                width: "80%",
-                height: "80%",
-                border: "none",
-                borderRadius: "3px",
-              }}
-              title="BookingFormWithWebsite"
-            ></iframe>
-          </div>
-        </div>
-      )}
+    </div>
+  </div>
+)}
 
       <div
         onClick={toggleForm}
@@ -314,9 +351,8 @@ const HeroSection = () => {
                   width={12}
                   height={12}
                   />
-              </div>
-              
-                  </Link>
+              </div>  
+            </Link>
 
               
             <Link 

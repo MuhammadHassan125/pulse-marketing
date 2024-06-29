@@ -180,26 +180,30 @@ const WebsiteAuditForm = () => {
           justifyContent: 'center',
           alignItems: 'center',
           overflowY: 'auto',
-          // padding: '20px',
           border: 'none',
           outline: 'none',
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+          '& .MuiModal-root': {
+            border: 'none',
+            outline: 'none',
+          },
+          "&:focus": {
+            outline: "none"
+          },
+          // height: 'auto',
           '@media (max-width: 768px)': {
             padding: '10px',
           },
         }}
       >
-        <div className='flex items-center justify-center h-full'>
+        <div className='flex items-center justify-center'>
           <div
             id="so-boxso1717549071"
             className='relative bg-my-blue-gradient px-20 py-8 rounded-lg text-black'
             style={{
               maxWidth: 'auto',
               width: '100%',
-              // margin: '0 auto',
-              // '@media (max-width: 768px)': {
                 padding: '40px',
-              //   maxWidth: '100%',
-              // },
             }}
           ><div id="so-titleso1717549071">
                     <button

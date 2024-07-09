@@ -208,13 +208,13 @@ const WebsiteAuditForm = () => {
           ><div id="so-titleso1717549071">
                     <button
               onClick={onClose}
-              className="absolute z-30 top-2 right-2 text-white text-lg bg-[#253fa4]"
+              className="absolute z-30 top-2 right-2 text-white text-lg bg-[#253fa4] cursor-pointer"
             >
               {/* &times; */}
               <IoMdClose />
 
             </button>
-                      <h2  className='text-white font-bold text-bold text-center'>Audit Your Website's <br/>Performance.</h2>
+                      <h2  className='text-white font-bold text-2xl text-center'>Get Your Free  SEO<br/> Report!</h2>
                       </div>
                         <form className="so-widget-form" id="so1717549071" action="https://www.websiteauditserver.com/process-embedded.inc" target="so-iframe" data-behaviour="modal" data-title="Website Report for " data-touch="Thank you for requesting a report. We&#039;ll be in touch shortly!" onsubmit="return soSubmit(this)">
                       <input id="so-typeso1717549071" type="hidden" name="type" value="pdf"/>
